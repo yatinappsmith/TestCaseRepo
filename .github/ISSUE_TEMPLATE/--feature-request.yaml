@@ -1,6 +1,6 @@
 name: 🛠️ New Testcase
 description: Add new testcase
-title: " "
+title: "[TestCase]"
 labels: [manual]
 body:
 - type: textarea
