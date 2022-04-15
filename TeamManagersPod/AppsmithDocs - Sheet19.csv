@@ -1,0 +1,35 @@
+RC Test covereage,SKIP
+Signin Page,
+The Successfull Login,
+The signup for the new user,
+The forgot password doesnt work,
+there is OAuth login in RC,
+Application Page,
+The user is able to create new org/new application,
+The documentation link is working,
+Welcome tour is creating the standup app and the Tour is successfull,
+The end tour link is displayed inside the tour,
+When the org name is too big the tooltip is displayed,
+"When the user is and admin of the Org following details is displayed 
+1.Organization setting
+2.Import application
+3.Share
+4.member
+5.Leave Organization ",
+"When the only admin tries to leave the org the error is displayed as ""The last admin can not be removed from an organization""",
+when user click on member the user is navigated to members tab,
+The invite user flow should be working corectly,
+The share button on application works as per its functionality,
+when the user is given a developer or a viwer access to tha pplications in the org the user is able to leave the org,
+Import export worked for the Mongo successfiully,
+When the user has a Developer or Viewer access then the import export is not displayed,
+Only leave org should be displayed when the user click on org name when the user has developer or viewer access,
+When user click on edit icon the user is able to edit the org name,
+"functionlaity of Fork, Duplicate and delete",
+"The Theme edit, edit profile and sign out links works as per requirments",
+The links iinside the ? icon works as per the requirments,
+Datasources,
+When the user click on datasources + icon the user is navigated to Create new tab,
+"when there is no active data sources ""No Active data sources found . Craete new "" Button is displayed",
+when user click on Create new button the user is navigated to create new tab,
+Mock Database->MongoDB->Query 1->find Documents ,

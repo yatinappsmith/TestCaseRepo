@@ -1,0 +1,83 @@
+Steps,Title
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a crud page 
+4.Create a clone of a page 
+5.Create a new branch",The cloned page should work without any error in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a get query 
+4.Create a clone of a get query 
+5.Bind it to a widget now create a new branch ",The cloned query should work correctly  in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a get query 
+4.Move the query to the new page 
+5.Bind it to a widget now create a new branch ",The moved query should work correctly  in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a new api
+4.Create a clone of a API 
+5.Bind it to a widget now create a new branch ",The API should work correctly  in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a CURL query 
+4.Move the  CURL query to the new page 
+5.Bind it to a widget now create a new branch ",The CURL should work correctly  in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a new JS
+4.Create a Copy of a JS
+5.Bind it to a widget now create a new branch ",The JS should work correctly  in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a new JS
+4.Move the JS to a new page
+5.Bind it to a widget now create a new branch ",The JS should work correctly  in the barnch 1 and in the new branch created
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a new JS
+4.Create a new get query
+5.Create API
+6.Create a new curl
+7.Bind it to a widget 
+8.Create a clone of a page 
+9.After that create a new branch ",All the data binding should work corectly in the main branch and in the newly created branch
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a new page from page setting
+4.Edit a page name
+3.Add a new JS
+4.Add a new get query
+5.Add API
+6.Add a new curl
+7.Bind it to a widget 
+8.Create a clone of a page from page settiing
+9.After that create a new branch ",The Cloned page should be working exactly same a original page in both the main and branch and newly created branch
+"Steps:
+1. Create a new org
+2. Add a new app
+3.Create a new page from page setting
+4.Edit a page name
+3.Add a new JS
+4.Add a new get query
+5.Add API
+6.Add a new curl
+7.Bind it to a widget 
+8.Change Page visiblity to Hide
+8.Create a clone of a page from page settiing
+9.After that create a new branch ",The page visiblity of the new page should be same as old page both in the main branch and the newly Created branch
+"Steps:
+1. Create a new org
+2. Add a new app
+3.delete a page from the page setting 
+4.After that create a new branch",The deleted branch should not be present in the main branch and the newly Created branch

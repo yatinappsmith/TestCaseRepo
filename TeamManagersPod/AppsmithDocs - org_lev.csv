@@ -1,0 +1,21 @@
+SL no,use Cases for Leave organization,Test results(DP),TestResult (release)
+1,"The application for wjhich the user is a admin and click on the application name following menu should be displayed:
+a.Organization setting
+b.Import application
+c.Share
+d.Member
+e.Leave organization",pass,pass
+2,When the admin user click on Leave organization menu in the application dropdown the error message should display,pass,pass
+3,When the user has a Developer/Viewer access then when the user click on Application dropdown only leave organization menu should be present,pass,pass
+4,When the user has a Developer access the User should be able to edit the application and the Export Should be allowed,pass(as of now cant export),pass(as of now cant export)
+5,When the user has a viewer access the user should only be able to lunch and view the application and the Export Should be allowed,pass(as of now cant export),pass(as of now cant export)
+6,"When the Admin User click on Organization setting and goto memebers tab->There should be delete ICon Added for all the users ""Including Admin""",pass,pass
+7,The email coloum should display with User email,pass,pass
+8,The name coloum should display with user display name,pass,pass
+9,Role should be displayed with user Role,pass,pass
+10,the Delete Column should be displayed with Bin Icon,pass,pass
+11,The Admin user should be Able to delete the Developer and viewer successfull once its deleted cross verify with viwer and developer account that they dont have access anymore,pass,pass
+12,The Developer and Vivwer has the Previlage to Leave the organization when they Leave the organization that Application anme shouls not be displayed in Application page,pass,pass
+13,"When there is only one admin and if he try to leave the organization the the error message should be displayed as""The last admin can not be removed from an organization""",pass,pass
+14,If there is only one admin for organization that admin can leave organization only after assigned any other user as a Admin,pass,pass
+15,Edit the display name in the edit profile section and check the name is updated in the name column in the members Tab,pass,pass

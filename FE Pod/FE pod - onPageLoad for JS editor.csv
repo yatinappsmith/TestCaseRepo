@@ -1,0 +1,11 @@
+Description,Is Test Automated or Not,Type of test case,Steps,Expected Result,Actual Result,Test Result/ Comments
+UI changes,,Positive,Verify that JS editor function on watch window has a settings button available for functions marked async,"When a function is async, an async tag and settings button appears on the watch window",,
+Functional testing for onPageLoad for JS editor functions,,Positive,Clicking on the setting icon should open a modal with onPageLoad settings and a confirmation setting,Modal with onPageLoad and confirmation setting is displayed,,
+,,Positive,"Verify that selecting ""Run Function on Page load"" runs the function when page is loaded",Function should be run on page load,,
+,,Positive,"Verify that selecting ""Request confirmation before calling Function?"" pops-up a modal for user confirmation when the function is run",Confirmation modal should be displayed,,
+,,Positive,Verify that selecting both options on this settings modal shows a confirmation modal when the page is loaded,Confirmation modal should be displayed on page load for the function,,
+,,Positive,Verify that function calls inside the JS object are run only after clicking on confirmation and these functions are not run if user clicks on Cancel,Functions are run only after Confirm is clicked on the confirmation modal,,
+,,Positive,Multiple function set to run on page load and with user confirmation set to yes should display confirmation modal for each function,Confirmation modal should be displayed for each function,,
+,,Positive,"App should behave the same when a JS object is marked to run on page load when app is forked,duplicated and imported when function call passes", ,,
+,,Negative,"App should behave the same when a JS object is marked to run on page load when app is forked,duplicated and imported when function call fails", ,,
+,,Positive,Call and API and JS object inside a JS object that's set to run on page load, ,,

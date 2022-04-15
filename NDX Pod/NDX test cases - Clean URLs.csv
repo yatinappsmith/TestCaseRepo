@@ -1,0 +1,46 @@
+Steps,Feature,Change,Expected,Actual path
+/org,    ,exact,/org,Currently #org not /org on prod as well
+/org/:orgId/settings,    ,exact,/org/:orgId/settings,
+/org/:orgId/settings/general,    ,exact,/org/:orgId/settings/general,
+/org/:orgId/settings/members,    ,exact,/org/:orgId/settings/members,
+/users,Users: not an active page,exact,/users,
+/user,UserAuth,exact,/user,
+/user/login,    ,exact,/user/login,
+/user/signup,    ,exact,/user/signup,
+/user/resetPassword,    ,exact,/user/resetPassword,
+/user/forgotPassword,    ,exact,/user/forgotPassword,
+/applications,ApplicationListLoader,exact,/applications,
+/signup-success,   ,exact,/signup-success,
+/profile,UserProfile,exact,/profile,
+/unsubscribe/discussion/:threadId,UnsubscribeEmail,exact,/unsubscribe/discussion/:threadId,
+/setup/welcome,Setup: super user form,exact,/setup/welcome,
+/applications/:applicationId/(pages)?/:pageId?/edit,EditorLoader -> WidgetsEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit,
+/applications/:applicationId/(pages)?/:pageId?/edit/checklist,OnboardingChecklist,exact,/:applicationSlug/:pageSlug-:pageId?/edit/checklist,
+/applications/:applicationId/(pages)?/:pageId?/edit/datasources/:selectedTab,IntegrationEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/datasources/:selectedTab,
+/applications/:applicationId/(pages)?/:pageId?/edit/api/:apiId,ApiEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/api/:apiId,
+/applications/:applicationId/(pages)?/:pageId?/edit/queries/:queryId,QueryEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/queries/:queryId,
+/applications/:applicationId/(pages)?/:pageId?/edit/jsObjects,JSEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/jsObjects,
+/applications/:applicationId/(pages)?/:pageId?/edit/jsObjects/:collectionId,JSEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/jsObjects/:collectionId,
+/applications/:applicationId/(pages)?/:pageId?/edit/api/curl/curl-import,CurlImportForm,exact,/:applicationSlug/:pageSlug-:pageId?/edit/api/curl/curl-import,
+/applications/:applicationId/(pages)?/:pageId?/edit/saas,ListView for SAAS,exact,/:applicationSlug/:pageSlug-:pageId?/edit/saas,
+/applications/:applicationId/(pages)?/:pageId?/edit/saas/datasources/:datasourceId,DatasourceForm,exact,/:applicationSlug/:pageSlug-:pageId?/edit/saas/saas-service-name/datasources/:datasourceId,
+/applications/:applicationId/(pages)?/:pageId?/edit/saas/api/:apiId,ActionForm,exact,/:applicationSlug/:pageSlug-:pageId?/edit/saas/saas-service-name/api/:apiId,
+/applications/:applicationId/(pages)?/:pageId?/edit/pages,PagesEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/pages,
+/applications/:applicationId/(pages)?/:pageId?/edit/datasource/:datasourceId,DataSourceEditor,exact,/:applicationSlug/:pageSlug-:pageId?/edit/datasource/:datasourceId,
+/applications/:applicationId/(pages)?/:pageId?/edit/provider/:providerId,ProviderTemplates,exact,/:applicationSlug/:pageSlug-:pageId?/edit/provider/:providerId,
+/applications/:applicationId/(pages)?/:pageId?/edit/generate-page,GeneratePage Cards,exact,/:applicationSlug/:pageSlug-:pageId?/edit/generate-page,
+/applications/:applicationId/(pages)?/:pageId?/edit/generate-page/form,GeneratePage Form,exact,/:applicationSlug/:pageSlug-:pageId?/edit/generate-page/form,
+/applications/:applicationId/(pages)?/:pageId?/edit/generate-page/form,Google Sheets,exact,earworm/spotify-on-the-go-61ea4a44361846772cfb1180/edit/saas/google-sheets-plugin/api/61ea4a45361846772cfb11d6,
+/applications/:applicationId/(pages)?/:pageId?,AppViewerLoader -> AppViewerPageContainer (nested route),exact,/:applicationSlug/:pageSlug-:pageId,
+/applications/:applicationId/(pages)?/:pageId?/fork,AppViewerLoader -> AppViewerPageContainer,exact,/:applicationSlug/:pageSlug-:pageId?/fork,
+/settings/(:category)?,Admin settings,exact,/settings/(:category)?,
+Redirects from existing release endpoints should work,    ,Positive,Use navigateTo() with existing app slugs and observe that it should redirect to the right location within the app with new URL slug,All redirects point to the right location
+Private app with old URL should work with new slug ,    ,Positive,Share a private app with old URL format. This should redirect with a new path,A private app shared with old URL should redirect to the new slug
+Private app with old URL should work with new slug ,    ,Positive,Try to edit the app from view mode,App should be editable with new slug
+Private app with old URL should work with new slug ,    ,Positive,Go to home page from the app ,Home page should have the new format for URL slug
+Public app with old URL should work with new slug ,    ,Positive,Share a public app with old URL format. This should redirect with a new path,Public app shared with old URL should redirect to new slug
+Public app with old URL should work with new slug ,    ,Positive,Try to fork a public app after it has been redirected from previous URL and try to edit this app,Not working right now
+Public app with old URL should work with new slug ,    ,Positive,Try to edit the app from view mode after signing up,App should be editable with new slug
+Modal to inform user to slug format change,    ,Positive,"On launching a new app, a modal displaying changed URLs should pop-up",
+Modal to inform user to slug format change,    ,Positive,Clicking on update should automatically update all app URL's to the new version,
+Modal to inform user to slug format change,    ,Negative,Clicking on cancel will minimize this modal to an icon next to the debugger and user can click on this icon at any time to upgrade to the new slug,

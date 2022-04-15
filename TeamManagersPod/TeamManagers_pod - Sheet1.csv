@@ -1,0 +1,771 @@
+Area,Description,Type of test case,Steps,Expected Result,Actual Result,Test Result/ Comments,Author,Account Used for testing,Is Test Automated or Not,comments
+Deploy Button,Verify the display of git connection dropdown,UI,"1.Go to Canvas
+2.Click on Down arrow next to deploy button
+4.Verify the display of git connection link","The dropdown should be displayed with 2 link
+1.Connect to git repository link 
+2.Current deploy version link",pass,,,,No,
+Deploy Button,Verify the functionality of deploy button before the git connection,Functionality,"1.Go to Canvas
+2.Click on Deploy button",The application should be deployed and the view mode should be displayed,pass,,,,Automated,
+Deploy Button,verify the functionality when user click on Current deployed mode link,Functionality,"1.Go to Canvas
+2.Click on Down arrow next to deploy button
+3.Click on Current Deploy mode link and verify the functionality ",The application should be deployed and the view mode should be displayed with the current deployed version of the application,pass,,,,Automated,
+Deploy Button,Deploylink under Application name dropdown, ,    ,    ,,,,,No,
+Deploy Button,"Verify the display of Deploy, Current deploy,Git Connection Link under Application name dropdown",UI,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Click on Deploy menu verify the display","When the user click on deploy menu the submenu should be displayed with 3 links
+1.Deploy
+2.Current deplyed Version
+3.Connect Git",pass,,,,No,
+Deploy Button,Verify the functionality when user click on Deploy Link under Application name dropdown,Functionality,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Verify the functionality when user click on Deploy Link under Application name dropdown",The application should be deployed and the view mode should be displayed,pass,,,,Automated,
+Deploy Button,Verify the functionality when user click on Current deployed version Link under Application name dropdown,Functionality,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Verify the functionality when user click on Current deployed version  Link under Application name dropdown",The application should be deployed and the view mode should be displayed with the current deployed version of the application,pass,,,,Automated,
+Deploy Button,Verify the functionality when user click on Connect to git repository Link under Application name dropdown,Functionality,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Verify the functionality when user click on Connect to git repository Link under Application name dropdown",The Git Connection pop up should be displayed ,pass,,,,Automated,
+Deploy Button,Verify the functionality when user click on Deploy Link under Application name dropdown after successful git connection,Functionality,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Click on Deploy menu verify the display",The Git Connection pop up should be displayed ,pass,,,,Automated,
+Deploy Button,Verify the functionality when user click on Current deployed version Link under Application name dropdown after successful git connection,Functionality,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Verify the functionality when user click on Current deployed version  Link under Application name dropdown",The current deployed version of the application should be displayed in the new tab,pass,,,,Automated,
+Deploy Button,Verify the functionality when user click on Connect to git repository Link under Application name dropdown after successful git connection,Functionality,"1.Go to Canvas
+2.click on dropdown icon next o application name
+3.Click on Deploy menu verify the display", The Connect Git repo Link should not be displayed,pass,,,,Automated,
+Connect Git button,Verify the display of connect git button ,UI,"1.Go to Canvas
+2.Verify the display of connect git button at bottom left corner",The Connect Git Button should be displayed at the bottom left corner of the canvas,pass,,,,No,
+Connect Git button,Verify the functionality when user click on Connect git button,Functionality,"1.Go to Canvas
+2.Verify the functionality when user click on Connect git button",The Git Connection pop up should be displayed ,pass,,,,Automated,
+Connect Git button,Connect Git link Below Deploy button,,,    ,,,,,No,
+Connect Git button,Verify the functionality when user click on Connect to git repository link under Deploy Dropdown ,Functionality,"1.Go to Canvas
+2.Click on Down arrow next to deploy button
+3.Verify the Functionality of git connection link",The Git Connection pop up should be displayed ,pass,,,,Automated,
+Connect Git button,Verify the functionality of connect git when user is doing onbaording,Functionality,"1.Go to Home page
+2.Click on Welcome tour
+3.Once the onboarding started 
+4.Verify the functionality of Connect Git button","The user will be faced with 2 scenario here:
+1.When the onboarding tour is going on and if the user click on Connect Git the message should be displayed as"" Connecting to a git repo is disabled during the onboarding tour""
+2.If the Tour is completed or Skipped then The git coonection pop up should be displayed",pass,,,,Automated,haojin111
+Connect Git button,Verify the functionality How the user Can connect for Git,Functionality,"1.Go to Home page
+2.Verify the functionality How the user Can connect for Git
+Note: verify all these sceanrio with All the Login Menthod i.e. Signup mode
+b.Github login
+c.Google login","The User can connect there application to git In following scenario:
+1.If the application is old not connected to git can be connected 
+2.The forked application can be connected to git
+3.The duplicate application can be connected to git
+4.The new application Can be connected to git 
+5.The shared application can be connected to git with only Admin or developer access
+6.When the user signup for the appsmith he can connect his first application build ",break down to different point,,,,No,"Discuss with BE once, not sure if there's any diff in applications that are forked or duplicated. Similarly both new and old applications won't have any different conditions in terms of being able to connect with git"
+Connect Git button,verify the functionality when the user import and export the application,,"1.Go to Home page
+2.verify the functionality when the user import and export the application",If the application was connected to git before now the connection wont be retained when its imported,pass,,,,No,
+Git connection Pop up,Verify the display of Git connection pop up ,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Verify the display of Git connection popup","The display of Git connection Pop up (for the first time when we connectiong to git)
+1.The pop up should be displayed with as follows 
+a.The Git connection tab highlighted with orange underline 
+b.Connect to Git Repository text
+c.Checkout branches, Make commits, add deploy your application text 
+d.Remote URL Text
+e.Create an empty git repository and paste the remote URL here. text followed by learn more link
+f.Paste your URL here placeholder text with the input box
+g.Close Icon ",pass,,,,Cannot Automated,
+Git connection Pop up,Validate the generation of SSH KEy,Functionality,"1.Go to Github
+2.Create a new repo
+3.Under Code section
+4.Verify the display of SSH key",Under the code Tab we can find the SSh Key /Copy it and paste it in the Remort URL input box,pass,,,,Cannot Automated,
+Git connection Pop up,Verify the functionality when user enter the SSH Key ,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Verify the functionality when user enter the SSH Key ",When the user enter any text in the input box the Generate SSH key button should be displayed,pass,,,,Automated,
+Git connection Pop up,verify the display when user enter wrong SSH key ,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Verify the display when user enter the wrong SSH Key ","The error message should be displayed as ""Please enter valid SSH URL of your repository
+"" and generate Key button should be disabled",pass,,,,Automated,
+Git connection Pop up,Verify the display of Generate KEy button,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+4.Verify the display of Generate KEy button","The generate SSH Key button should be displayed in orange Color and the Text should in Upper case inside the button, The button should be left alligned inside the pop up",pass,,,,Cannot Automated,
+Git connection Pop up,Verify the display of git connection pop up once the key is generated,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.verify the display of git connection pop up","Once the user click on the Generate SSH key Button the same Git connection pop up should be displayed as follows:
+1.Git Connection tab with orange underline
+2.Connect to Git Repository text
+3.Checkout branches, Make commits, add deploy your application text
+4.Remote URL via SSH input box with SSH key non editable condition 
+5.Deployed Key input box with autogenerated Key and copy icon next to it 
+6.Copy this deploy key to your Git Repository setting.text followed by learn more link in orange color
+7.User Settings text
+8.Use Default Configuration check box with edit link 
+9.Username name input box
+10.Useremail Input box
+11.Connect button in disabled state",pass,,,,Cannot Automated,
+Git connection Pop up,Verify the display of Remote URL input box,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Verify the display of Remote URL input Box",The Enter Remote URl should not be displayed and user should be able to edit it,pass,,,,No,
+Git connection Pop up,Verify  the display of Deploy Key section,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Verify  the display of Deploy Key section",This is a autogenerate Key section the key will be displayed with a copy Icon,pass,,,,No,
+Git connection Pop up,Verify the functionality of copy icon,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Verify the functionality of copy icon in Deploy Key",When user click on copy icon the key should be coped and the Green tick icon should be displayed,pass,,,,Automated,
+Git connection Pop up,Validate the functionality of the deploy key,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.copy the  Deploy Key
+8.Validate the functionality of the deploy key","Once we Copy the deploy key It should be added in the Git repo follow below steps to do that 
+Steps where the user should copy the deploy key
+step1: Click on Copy icon to copy the deploy key
+step2: go to github
+step3:go to setting tab
+step 4: click on deploy key menu
+step 5: click on Add deploy key button",pass,,,,Cannot Automated,
+Git connection Pop up,Validate the functionality of copying deploy key in Github,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.copy the  Deploy Key
+8.Validate the functionality of copying deploy key in Github","There are 2 Sceanrio when we add the deploy key 
+1.Deploy key added without write access
+2.Deploy key added with write access",pass,,,,Cannot Automated,
+Git connection Pop up,Validate the functionality if deploy key is added without write access,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.copy the  Deploy Key
+8.Validate the functionality if deploy key is added without write access","If the user has not added a Write acess then the toast bar should be displayed saying "" The user doesnt have write access""",pass,,,,Automated,
+Git connection Pop up,Validate the functionality if deploy key is added with write access,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.copy the  Deploy Key
+8.Validate the functionality if deploy key is added with write access",If the user has added it with the write access then there should not be any error,pass,,,,Automated,
+Git connection Pop up,Verify the functionality of learn more under Git connection,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Verify the functionality of learn more under Git connection",The functioanlity of learn more link under the deploy key is when the user clicks on it the user should be navigated to git hub docs,failed,,,,Automated,
+Git connection Pop up,Verify the display of of user setting section,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Verify the display of user setting section Under git connection pop up","The user setting section should be displayed with :
+1.Use Default Configuration checkbox (checked by default)
+2.Edit link
+3.Author name input box
+4.Author email Input Box",pass,,,,No,
+Git connection Pop up,verify the functionality of User default configuration chcekbox,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.verify the functionality of User default configuration chcekbox",The Use Default Configuration checkbox should be checked by default so when this checked by default the username and Useremail will ge fetched by the git no need to be entered manually,failed,,,,No,
+Git connection Pop up,verify the functionality of User default configuration chcekbox when the chcekboc is unchecked,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.verify the functionality of User default configuration chcekbox when the chcekboc is unchecked",If the user Uncheck the User Default Configuration checkbox the user should be able to edit the username and email ,pass,,,,Automated,
+Git connection Pop up,Verify the display of Author name Input box,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.Verify the display of Author name Input box","When the user edit the Username the user should be able to add the username if this field is keept empty the error message should be displayed as "" enter the user name""",pass,,,,Automated,
+Git connection Pop up,Verify the Functionality of Author name input Box,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.Verify the Functionality of Author name input Box",When the user enetr the name in the input box that should allow the special characters,pass,,,,No,
+Git connection Pop up,Verify the display of Author email Input Box,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.Verify the display of Author email Input Box","When the user edit the Useremail the user should be able to add the Useremail if this field is keept empty the error message should be displayed as "" enter valied email id""",pass,,,,No,
+Git connection Pop up,Verify the functionality of Author email Input Box,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.Verify the functionality of Author email Input Box","The user enter the invalid email id Check for the following scenarios
+1.The email Textbox should not allow only username is given
+2.There should be a invalid domain name
+3.Give only spaces in Email placeholder
+4.Dont enter any Email 
+5.Enter the invalid email ID
+When there is an invalid email ID the error message should be displayed as""Please provide a valid email address""",pass,,,,No,
+Git connection Pop up,Verify the functionality of Connect button,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.Verify the functionality of Connect button","1.The connect will be enabled by default as all the mandatory fields are Autofiled
+2.If all the input fields are valid and clicks on connect the connect should be successfull
+3.If there are ay error should be displayed",pass,,,,Automated,
+Git connection Pop up,Validate the error displayed when the connect failed,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.Validate the error displayed when the connect failed","If the deploy key is not added in git with correct access then error should be displayed as ""Error while connecting"" Make sure your SSH Key has write access.  Read Documetation link",pass,,,,No,
+Git connection Pop up,Verify the functionality of Read documantation link,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.When the connection fail
+8.Verify the functionality of Read documantation link",The user should be navigated to appsmith docs page,pass,,,,Automated,
+Git connection Pop up,Verify the display of progress bar when user click on connect button,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under user setting section 
+7.WValidate the display of progress bar when user click on Connect button",When user click on the connect Button the loader should be displayed with the % of the Work completed,pass,,,,No,
+Deploy Tab,Validate the display of Deploy Tab,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate the display of Deploy Tab","Once thye user click on connect on successfull connection the user should be navigated to deploy tab and the following data should be displayed:
+1.Deploying your application text
+2.Count widget Updated /addeed text
+3.count queries modified/added  text
+4.Commit to Branchname (the branch name which the user is in )
+5.Commit & Push button
+6.Close button""",pass,,,,No,
+Deploy Tab,verify the display of Git Connection Pop up,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate the display of Git connect Tab after sucessfull connection","The Git Connection pop up should be displayed with 3 tabs
+1.Git Connection 
+2.Deploy Tab
+3.Merge Tab",pass,,,,No,
+Deploy Tab,Validate the Update Status under Deploy Application section,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Validate the Update Status under Deploy Application section","This section should update based on the new changes made by User
+i.e: Count widget Updated /addeed text
+count queries modified/added  text ",failed,,,,No,
+Deploy Tab,Validate the Branch name display,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Validate the Branch name display",In the Commit to Branchname text the branchname will be displayed on the branch selected,pass,,,,No,
+Deploy Tab,Validate the Input Box displayed below Commit to master Text ,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Validate the Input Box displayed below Commit to master Text ",The comment Input box below the comment to master text cant be kept empty if its kept emptythen commit & push button should be disabled,pass,,,,Automated,haojin111
+Deploy Tab,Verify the functionality of Commit & Push Button,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Verify the functionality of Commit & Push Button","1. If there are no changes made in the app then the commit & ppush button should be displayed in disabled state
+2. If there are chnages made in the app then the Commit & Push button should be enabled",pass,,,,Automated,
+Deploy Tab,Verifythe functionality when the First commit & Push is Completed,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Verifythe functionality when the First commit & Push is Completed",All the changes should get added in the git and Commit & Push button should be disabled and Deploy Preview shouldbe displayed,pass,,,,No,
+Deploy Tab,Verify the display of the progress bar when the user Commit and Push each time,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Verify the display of the progress bar when the user Commit and Push each time",When the user clicks on the commit & push button the progress bar should be displayed based on the completion of task,pass,,,,No,
+Deploy Tab,Verify the Functionality of Deploy Preview section,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Verify the display of Deploy Preview section",The deploy preview Link should be displayed only after the first commit done and it should e updated with the each commit and push,pass,,,,Automated,haojin111
+Deploy Tab,Verify the display of Deploy preview,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.Verify the display of Deploy preview","1.The green tick mark should be displayed when everytime a new deploy preview is grenerated 
+2.When the suer click on the latest Deploy Preview link The view mode of the app should be displayed 
+3.last deployed 3 hrs ago text should be displayed the time should based on the last deployed time",pass,,,,No,
+Deploy Tab,validate the error displayed for the commit & Push State,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Under Deploy Tab
+6.validate the error displayed for the commit & Push State",If there are any unpulled changes in the app and if the user try to commit & push the chnages the error should be displayed,,,,,Automated,
+Git Connection Update config Tab,Verify the disply of Git Connection page after successful  connection to git,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the disply of Git Connection page after successful  connection to git","1.Git Connection tab with orange underline
+2.Connect to Git Repository text
+3.Checkout branches, Make commits, add deploy your application text
+4.Remote URL via SSH input box with SSH key disabled condition 
+5.Deployed Key input box with autogenerated Key and copy icon next to it 
+6.Copy this deploy key to your Git Repository setting.text followed by learn more link in orange color
+7.User Settings text
+8.Use Default Configuration check box with edit link 
+9.Author name name input box
+10.Author email Input box
+11.Update config button in disabled state",pass,,,,No,
+Git Connection Update config Tab,Validate that the user is able to edit Author name,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate that the user is able to edit Author name",The user should be able to edit the name once the user update a name the update config button will be enabled,pass,,,,No,
+Git Connection Update config Tab,Validate that the user is able to edit Author Email,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate that the user is able to edit Author Email",The user should be able to edit email once the user edit the email he update config button will be enabled,pass,,,,No,
+Git Connection Update config Tab,Validate the Functionality of update button when user reenter same Authorname and Author email ,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.VValidate the Functionality of update button when user renetr same Authorname and Author email ",The update button should be in the disabled state,pass,,,,No,
+Git Connection Update config Tab,Verify whether the updated name is displayed in the git commit section,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Update authorname and author email
+6.Verify whether the updated name is displayed in the git commit section",When the user update the authorname validate that the update user is displayed in the git commit section when the user commit & push,pass,,,,No,
+Git Connection Update config Tab,Verify the functionality of close icon displayed on top right corner of the git connection pop up,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Update authorname and author email
+6.Verify the functionality of close icon displayed on top right corner of the git connection pop up",When the user click on the close icon the pop up should be closed,pass,,,,No,
+Git Connection Update config Tab,Verify the display of Icons on left corner after successfull connection to git,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the display of Icons on left corner after successfull connection to git","Once the user is connected to git the left bottom of the application should be displayed with following Icon:
+1.Current branch user in Text
+2.+ icon
+3.Up arrow icon
+4.Down arrow icon(removed)
+5.Fork Icon
+6.Setting Icon",Pass,,,,No,
+Branch Creation,Validate the display of Branch name,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate the display of Branch name",the default branch name should be displayed at the left corner,pass,,,,No,
+Branch Creation,Verify the functionality when user click on the branch name,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality when user click on the branch name","The dropdown should be opened on the top with following details:
+1.Switch branches with refresh icon
+2.Input box with placeholder text ""Find or Craete a branch""
+3.Default Branch ""master "" with text Default at right 
+4.close icon",pass,,,,No,
+Branch Creation,Verify the functionality of Refresh icon next to Switch Branch,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Verify the functionality of Refresh icon next to Switch Branch",When user click on refersh icon All the branch name present in the git should get sync with the app branches,Failed,,,,Automated,
+Branch Creation,Verify the functionality of the Input Box,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Verify the functionality of the Input Box","The Input has 2 functionality:
+1.The user can search the branch name based by Prefix
+2.If the branch with the searched name is not present then click on enter the user can create a new branch",pass,,,,Automated,
+Branch Creation,validate of the branch name,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Vvalidate the branch name",The user can Create a branch name with any charcters,pass,,,,Automated,haojin111
+Branch Creation,Verify the functionality of the newly created branch,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Verify the functionality of the newly created branch",From the Deafult branch when user create a new branch all the Data should be caried to the newly Created branch,pass,,,,Automated,
+Branch Creation,Validate the navigation between the branches,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Validate the navigation between the branches",The user navigate between any barnches by clicking on the branch names,pass,,,,Automated,
+Branch Creation,Validate the error faced when user switches between the branches,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Validate the error faced when user switches between the branches","When the user has a new page created in the new branch which is not present in the old branch from the new page when user try to switch to old branch which doesnt contain the page ""the page not found error is displayed""",failed,,,,Automated,haojin111
+Branch Creation,Validate the functionality when the user delete the branches from git ,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Validate the functionality when the user delete the branches from git ",The deleted branch name should not be displayed in the Branch dropdown,failed,,,,Automated,
+Branch Creation,Validate whether the user id allowed to create a duplicate branch name,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Validate whether the user id allowed to create a duplicate branch name",The user should not be allowed to create a duplicate branch names,pass,,,,No,
+Branch Creation,Validate the display of Default branch names,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Validate the display of Default branch names",When the User change the deafualt branch from the git the default text should be displayed based on the default branched selected in the git,,,,,No,
+Branch Creation,Verify the display of the selected branch,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Verify the display of the selected branch",The selected branch should be highlighted in the grey color,pass,,,,No,
+Branch Creation,Validate the functionality when the number of branches increases,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.Validate the functionality when the number of branches increases",The scroll bar should be displayed the and the branch name will be arranged oldest to newest,pass,,,,No,
+Branch Creation,validate the functionality of close button,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Open branch dropdown 
+6.validat ethe functionality of close button",When the user click on close button the dropdown should be closed,pass,,,,No,
+Commit Icon,"validate the display when user hover on ""+"" Icon",UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.validate the display when user hover on ""+"" Icon","When the user hover on the + icon the tooltip should be displayed with text ""Commit Changes""",pass,,,,No,
+Commit Icon,"verify the functionality when user click on ""+"" Icon",Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.verify the functionality when user click on ""+"" Icon",The deploy pop up should be displayed ,pass,,,,Automated,haojin111
+Pull Icon,"validate the display when user hover on ""Downarrow"" Icon",UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.verify the functionality when user click on ""Downarrow"" Icon","When the user hover on the down arrow icon the tooltip should be displayed as ""No Commits to pull. in Sync  with remote repository ",pass,,,,No,
+Pull Icon,Verify the functionality of the down arrow icon,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of the down arrow icon",When the git and app are not in Syn(the chnages are not same) the total miss match changes count from git to app will be displayed on the down arrow icon,,,,,Automated,
+Pull Icon,Verify the functaionlaity when user click on pull icopn when there are pull changes,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functaionlaity when user click on pull icon when there are pull changes","The Modal should open on the left corner with following details:
+Conflicts found while pulling changes text
+Please resolve the conflicts manually on your repository. text followed by Learn More link
+Open repo Button
+Pull Changes Button",,,,,Automated,
+Pull Icon,Verify the functionality of Learn more link in Pull Changes modal,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of Learn more link in Pull Changes modal",The Appsmith documentation link should be opened,,,,,Automated,
+Pull Icon,Verify the functionality of Open repo button in Pull Changes modal,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of  open repo button in Pull changes modal",The git repo should be opened,,,,,No,
+Pull Icon,Verify the functionality of  in Pull Changes button in Pull changes modal,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of  in Pull Changes button in Pull changes modal",The new changes should be pulled in the selected branch,,,,,Automated,
+Merge Icon,"validate the display when user hover on ""Merge"" Icon",UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.validate the display when user hover on ""Merge"" Icon","The tooltip should be displayed with text ""Merge""",pass,,,,No,
+Merge Icon,"verify the functionality when user click on ""Merge"" Icon",Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.verify the functionality when user click on ""Merge"" Icon",The Pop Up should be displayed with the pop up Merge,pass,,,,Automated,
+Merge Icon,Verify the display of Merge Pop up,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the display of Merge Pop up","The pop up should be displayed with following details:
+1.Merge changes text
+2.Select Branch to Merge text with a dropdown
+3.the default Branch name which the user is currently worked on
+4.merge changes button",pass,,,,No,
+Merge Icon,Verify the functionality of Select Branch under merge tab,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of Select Branch under merge tab","The select branch dropdown should be displayed with following details:
+1.The serach icon
+2.All the branch name in the application",pass,,,,Automated,
+Merge Icon,Verify the functionality of serach input box inside the serach dropdown,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of serach input box inside the serach dropdown",The user should be able to serach the branch name,pass,,,,Automated,haojin111
+Merge Icon,Verify the functionally of the default dropdown under merge tab,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionally of the default dropdown under merge tab",The dropdown should be display with branch name that user is working and it should be not editable,pass,,,,No,
+Merge Icon,Verify the display of the Merge Button,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the display of the Merge Button",The Merge button should be in disabled state untill the user select the branch name from the select dropdown,pass,,,,Automated,haojin11
+Merge Icon,Validate the Sucess state When the user tries to merge the changes,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate the Sucess state When the user tries to merge the chnages","If there is no conflit when the user tries to merge. the chnages to the selected branch the success message should be displayed as ""This branch has no conflict with the base branch."" ",pass,,,,Automated,
+Merge Icon,Validate the Error state When the user tries to merge the changes,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Validate the Error state When the user tries to merge the chnages","If there is a conflit when user tries to merge chnages to the Slected branch then display ""This branch has conflict with the base branch. "" Resolve on Github button",pass,,,,Automated,
+Merge Icon,Verify the disply of readme file in the Git repo,UI,"1.Go to github
+2.Verify the disply of readme file in the Git repo",The read me file should be displayed appsmith logo and all the appsmith links and details,pass,,,,No,
+Merge Icon,verify the functionality of the readme file,UI,"1.Go to github
+2.verify the functionality of the readme file",The user is able to edit the readme file,pass,,,,No,
+Merge Icon,Multiple User Scenarios,,    ,    ,,,,,No,
+Multiple User Scenarios,verify the functionality when multiple user working on same repo,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.verify the functionality when multiple user working on same repo","The following the scenario that needs to validated:
+1.When the new user add a new branch that should be displayed to all user working on same application
+2.When the user add a new chnages and push the chnages to Master branch the user should pull before pushing there chnages to Master",,,,,No,
+The Switch Branches,Verify the display of branch names when the user click on Branch,Ui,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Verify the display of branch names","1.The switch barnch text with refresh Icon 
+2.The Local Branch Section 
+3.Remote branch Section
+4.close icon",pass,,,,No,
+The Switch Branches,Veirfy the display of local Branch ,Ui,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Veirfy the display of local Branch ",The Local Branch should be displayed with all the barnch that user creates locally,pass,,,,No,
+The Switch Branches,Verify the display of Remote Branch section,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Verify the display of Remote Branch section",By Default the origin/Master Branch should be displayed,pass,,,,No,
+The Switch Branches,Verify the functionality of remote branch,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Verify the functionality of remote branch",The user cant Edit the remote branch ,pass,,,,Automated,
+The Switch Branches,Verify the interactivity between the local and Remote branch,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Verify the interactivity between the local and Remote branch",when user create a remote branch from the git hub the remote branch will be added in the aplication by clicking on the remote branch the user can checkout from the branch and with the same name without origin as prefix the local branch will be created and user can make the chnages in local branch,,,,,No,Actually it would get created
+The Switch Branches,verify the disply of remote section when user add the new local branch ,UI,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.verify the disply of remote section when user add the new local branch ",The remote branch count should be same as number of local branches created ,,,,,No,
+The Switch Branches,Verify the functionality of the newly created remote branch,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Verify the functionality of the newly created remote branch",The user should not able to edit any data in the remote branches,,,,,Automated,"I think we should rephrase this a bit, if a remote branch is checked out, actually we'd checkout a local tracking branch of the remote"
+The Switch Branches,Validate the functionality of remote branches,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Validate the functionality of remote branches",When user edit the local branch and does the commit and push activity the remote branch will be updated with the new Changes,,,,,No,
+The Switch Branches,Verify the functionality when the user delete the local branch from git,Functionality,"""1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the branch name on left bottom corner
+6.Validate the functionality of remote branches",The remote branch that got Created for the local branch should be deleted along with the local,,,,,No,"currently we don't have an option to delete local branches , we can delete the remote branches that prunes the local branches when we click on the refresh button on the branch list"
+The Switch Branches,Verify the display of Git connected apps on home page,UI,"1. Go to home page of the application
+2. Verify the display of Git connected apps on home page",The fork icon should be displayed on all the application which are connected to git,,,,,No,
+Git Import / Git Private repo Access upto 4,verify the display of git import menu,,"1.Go to home page 
+2.Click on meat ball icon below the application
+3.Verify the display of Git import menu",The git import menu should be dipslayed below import export menu,,,,,No,
+Git Import / Git Private repo Access upto 5,Verify the functionality of git import,,"1.Go to home page 
+2.Click on meat ball icon next to new button
+3.Click on Git Import menu
+4.verify the functionality",When the user click on git menu icon the File should be downloaded in the Json format,,,,,No,
+Git Import / Git Private repo Access upto 6,Verify the functionality when the user export the Application which has been imported from the git,,"1.Go to home page 
+2.Click on meat ball icon next to new button
+3.Verify the functionality when the user export the Application which has been imported from the git","The application should be imported and the user should connected to old git repo 
+Note: The dataSource detail and the comments wont be retained when the application is exported",,,,,No,
+Git Import / Git Private repo Access upto 7,Verify the functionality when user export the old version application,,"1.Go to home page 
+2.Click on meat ball icon next to new button
+3.Verify the functionality when user export the old version application",The Export should fail ,,,,,No,
+Git Repo Restriction,The functionality of Git repo restriction for private repo,,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+2.Click on Deploy Button",When the user tries to connect his application to 4th private report the modal should be displayed saying Contact admin ,,,,,No,
+Git Repo Restriction,Verify the display of Repository limit pop up,,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+2.Click on Deploy Button","The Repository Limit Reached pop up should be displayed with following detailes:
+1.Adding and using upto 3 repositories is free. To add more repositories kindly upgrade. text
+2.Contact Sales button
+3.Revoke existing Repositories text
+4.To make space for newer repositories you can remove existing repositories.  text
+5.Revoking access might cause the application to break. text followed by learn more link in red color
+6.All 3 repository name with revoke acesss link in front of them",,,,,No,
+Git Repo Restriction,Verify the functionality when user click on Contact sales,,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+3.Under Repository Limit pop up
+4.Verify the functionality when user click on Contact sales",    ,,,,,No,
+Git Repo Restriction,Verify the functionality when user click on revoke access,,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+3.Under Repository Limit pop up
+4.Verify the functionality when user click on revoke access","The revoke access to promo code pop up should be displayed with folllowing detailes:
+1.This action is non reversible. Proceed with caution Text followed by learn more link in red color
+2.Revoke Access to Promo Code  header text
+3.Type “Promo Code” in the input box to revoke access. text
+4.Application Name input box
+5.Revoke button",,,,,No,
+Git Repo Restriction,Verify the display of Aplication name Input box,UI,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+3.Under Repository Limit pop up
+4.Click on revoke link
+5. In the Revoke access pop up 
+6.Verify the display of Aplication name Input box",The user should be able to enter the application name which they want to disconnect from the git,,,,,No,
+Git Repo Restriction,Verify the functionality when the user enter the wrong aplication name in Aplication anme input box,Functiionality,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+3.Under Repository Limit pop up
+4.Click on revoke link
+5. In the Revoke access pop up 
+6.Verify the functionality when the user enter the wrong aplication name in Aplication anme input box",If the user enter the wrong application name then the revoke access button should not be enabled,,,,,No,
+Git Repo Restriction,Verify the functionality when user click on revoke button,Functionality,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+3.Under Repository Limit pop up
+4.Click on revoke link
+5. In the Revoke access pop up 
+6.Verify the functionality when user click on revoke button",When the user click on revoke button the Application Which is connected to git should be removed,,,,,No,
+Git Repo Restriction,Validate the functionlity of revoking access,,"1.Go to canvas
+2. the user should be exhausted with his Limit (3 privite repo connected)
+3.Under Repository Limit pop up
+4.Click on revoke link
+5. In the Revoke access pop up 
+6.Validate the functionlity of revoking access",The user can Disconnect his any old application and connect the new application to git repo by disconnecting the any one of the old application from private repo,,,,,No,
+Git Repo Restriction,The functionality of Git repo restriction for public repo,,     ,The user can connect any no of application to the Public repo,,,,,No,
+Disconnect flow,Disconnect flow,,    ,    ,,,,,No,
+Disconnect flow,Verify the display of gear icon on left bottom corner ,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on the gear icon on left bottom corner
+6.Validate the display","The tooltip should be displayed as ""git settings""",,,,,No,
+Disconnect flow,Verify the functionality of gear icon on left bottom corner ,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the functionality of gear icon on left bottom corner ","The Git connect pop up should be displayed with following detailes:
+1.Git Connection tab with orange underline
+2.Connect to Git Repository text
+3.Checkout branches, Make commits, add deploy your application text
+4.Remote URL via SSH input box with SSH key and delete icon
+5.Deployed Key input box with autogenerated Key and copy icon next to it 
+6.Copy this deploy key to your Git Repository setting.text followed by learn more link in orange color
+7.User Settings text
+8.Use Default Configuration check box with edit link 
+9.Username name input box
+10.Useremail Input box
+11.Connect button in disabled state",,,,,No,
+Disconnect flow,Verify the display of tooltip when user hover on delete icon next to remote URl input box,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Verify the display of tooltip when user hover on delete icon next to remote URl input box",The tooltip should be displayed as revoke access,,,,,No,
+Disconnect flow,verify the functionality when user click on delete icon,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.verify the functionality when user click on delete icon","When user clickon the delete iconThe revoke access to promo code pop up should be displayed with folllowing detailes:
+1.This action is non reversible. Proceed with caution Text followed by learn more link in red color
+2.Revoke Access to Promo Code  header text
+3.Type “Promo Code” in the input box to revoke access. text
+4.Application Name input box
+5.Revoke button",,,,,No,
+Disconnect flow,Verify the display of Aplication name Input box,UI,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on delete button next to remote url input box
+6.Verify the display of Aplication name Input box",The user should be able to enter the application name which they want to disconnect from the git,,,,,No,
+Disconnect flow,Verify the functionality when the user enter the wrong aplication name in Aplication anme input box,Functiionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on delete button next to remote url input box
+6.Verify the functionality when the user enter the wrong aplication name in Aplication anme input box",If the user enter the wrong application name then the revoke access button should not be enabled,,,,,No,
+Disconnect flow,Verify the functionality when user click on revoke button,Functionality,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Click on Connect
+5.Click on delete button next to remote url input box
+6.Inside the Revoke access pop up Verify the functionality when user click on revoke button",When the user click on revoke button the Application Which is connected to git should be removed,,,,,No,

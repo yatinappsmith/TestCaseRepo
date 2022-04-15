@@ -1,0 +1,59 @@
+Testcases for Welcome Page setup for local development,
+When the user set up his Local machine the form should be displayed This should only one time activity and only displayed for the new users,Done
+"The First Page in the form should be displayed with the followign detailes:
+1.Appsmith_ LOGO
+2.We’ll quickly get to know you, connect you to your data and your CRUD application will be ready in a jiffy! Text 
+3.Connect your
+database or API Text with Database logo
+4.Connect queried data to pre-built widgets and customise with Javascript text with logo
+5.Instantly publish and share your apps  text with logo
+6.Get Started button it should be in orange color
+7.For more queries reach us on our text followed by  Discord Server link ",this has completely changed
+when user click on get started button the user should be navigated to next page ,Done
+"The What should we call you? page should be displayed following Detailes:
+A.The first wizard 1/3 has following 
+1.Appsmith_ LOGO
+2.What should we call you? text
+3.The Full name input box
+4.EMAIL ID input box
+5.Create Password input box
+6.VERIFY PASSWORD input box
+7.WHAT ROLE DO YOU PLAY? dropdown
+8.COMPANY NAME(OPTIONAL)
+B.The second Wizard 2/3 has following
+1.Usage data preference text
+2.Data is collected anonymously to improve your experience. text
+3.List of tracked items link 
+4.Allow Appsmith to collect usage data anonymously toggle
+C.Stay in touch wizard 3/3/ has following
+1.Get updates. We do not spam you. toggle
+Get updates. We do not spam you.
+D.Make YOUR FIRST APP button ",There are few chnages in it
+The Full name input box should be mandatory field and the user should allowed to enter the USer names,failed(no special charcater allowed
+"When the user doesnt enter the valid name the error messsage should be displayed as ""Please enter a username""",done
+The Email ID should be mandatory field and the user should allowed to enter the  email id,done
+"When the user doesnt enter the valid email id the error messsage should be displayed as ""Please enter a valid Email address""",done
+The Create Password should be mandatory field and the user should allowed to enter the  Password,done
+"The Password should be Min of 6 character and if the passowrd is less than 6 chacter then error message should be displayed as ""Please enter a strong password""",done
+"The ""VERIFY PASSWORD"" should be mandatory field and the user should allowed to enter the  Password",done
+If the passowrd entered in Create passowrd input box doesnt match with the verify passowrd input box then the error message should be displayed,done
+"The What Role do you play dropdown should be a manadatory field and the rdropdown should be displayed with following values:
+1.Engineer
+2.Product Manager
+3.Founder
+4.Operations
+5.Business Analyst
+6.Others",pass
+In Role dropdown the user is allowed select any of the option if the user select others then the Input box should be displayed below and the user can enter any role,pass
+The COMPANY NAME(OPTIONAL) Input box is a optinal field the user can enter there company names,removed
+"The usage data preferance should be displayed with List of tracked items link and 
+Allow Appsmith to collect usage data anonymously toggle ",failed
+When the user click on  List of tracked items link the user should be navigated to telemetry page in Document,failed
+The Allow Appsmith to collect usage data anonymously toggle should be enabled by default,failed
+"The Stay in touch section should be displayed with 
+Get updates. We do not spam you. toggle and the toggle should be enabled by default",failed
+The Make your first app button should be enabled only after filling all the mandatory fields,pass
+When the user click on Make your first app button the user should be navigated to application page ,pass
+The application page should be displayed in light mode by default,pass
+The user can create a new application or can sign out,pass
+if the user sign out then should be able to login with same user email and password that he used while filling the form,pass

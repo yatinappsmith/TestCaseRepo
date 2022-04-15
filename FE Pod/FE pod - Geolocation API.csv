@@ -1,0 +1,10 @@
+Description,Is Test Automated or Not,Type of test case,Steps,Expected Result,Actual Result,Test Result/ Comments
+getCurrentPosition(),,Positive,"Using getCurrentPostion returns array detailing geolocation including latitude, longitude, altitude, altitude accuracy, heading, speed",,,
+watchPosition(),,Positive,Using watchPosition() returns geolocation details of the user if location sharing is enabled,,,
+watchPosition(),,Negative,Using watchPosition() will not return geolocation details even if location sharing is enabled,,,
+clearWatch(),,Positive,Using clearWatch() should clear any active location watches,,,
+clearWatch(),,Negative,Using clearWatch() when there are no active location watches returns an error stating no active watch positions are available,,,
+canBeRequsted,,Positive,If user location sharing has been enabled then using canBeRequested returns a boolean value true,,,
+canBeRequsted,,Negative,If user location sharing has not been enabled then using canBeRequested returns a boolean value false,,,
+currentPosition,,Positive,Using currentPosition returns geolocation details of the user if location sharing is enabled,,,
+currentPosition,,Negative,Using currentPosition will not return geolocation details even if location sharing is enabled,,,

@@ -1,0 +1,106 @@
+Sl No ,Feature,Test Ideas,Title ,Feature +test Ideas 
+1,Connection ,Ensure is user is disaplyed with SMTP setup on Datasource page along with the symbol,STeps ,Test Ideas 
+2,Connection ,Ensure the user is able to click on the SMTP for establishing connection ,Expected behaviour ,Empty
+3,Connection ,"Ensure the user is dispalyed with 
+1) Email Configration 
+2) Authetication 
+3) Delete
+4) Test 
+5) Save",Labels ,Tab Name 
+4,Connection ,Ensure user is able to Delete the connection by clicking on Delete option ,,
+5,Connection ,Ensure user is able to Save the connection by clicking on Save option ,,
+6,Connection ,Ensure user is able to Test the connection by clicking onTest option ,,
+7,Connection ,Ensure user is able to Add data into the Email Configration (Host and Port ),,
+8,Connection ,Ensure user is able to set up by adding data into Authetication (Username and Password),,
+9,Connection ,Ensure user is able to Click on Test after adding only Email Config and appropriate error is displayed to user ,,
+10,Connection ,Ensure user is able to Click on Test after adding only Authetication  Config and appropriate error is displayed to user ,,
+11,Connection ,Ensure user is able to click on Test after adding Correct Email Configration and Authetication and info message is displayed to user,,
+12,Connection ,Ensure user is able to click on Test after adding InCorrect Email Configration and error message is displayed to user ,,
+13,Connection ,Ensure user is able to click on Test after adding InCorrect Authetication  Config  and error message is displayed to user ,,
+14,Connection ,Ensure user is able save the connection with Empty Correct Email Configration and Authetication and info message is displayed to user,,
+15,Connection ,Ensure the user is able to '+' icon in the Email Config  and user is able to add extra column,,
+16,Connection ,Ensure the user is able to Edit Datasource name ,,
+17,Connection ,Ensure Email Config and Auth config are collapsible ,,
+18,Connection ,Ensure user is able to click on Back option and user is navigated to Active Datasource tab ,,
+19,Connection ,Ensure on Save user is navigated to Active datasource tab,,
+20,Connection ,Ensure on Delete user is navigated to Create new tab,,
+22,Active Datasource,Ensure the saved SMTP is dispalyed under Active tab section ,,
+23,Active Datasource,"Ensure the saved SMTP is dispalyed with the following 
+1) Generate CURD (Inactive)
+2) New Query 
+3) Action Icon 
+a) Edit 
+b) Delete",,
+24,Active Datasource,Clicking on New Query user must be navigated to Query Pane ,,
+25,Active Datasource,Clicking on Delete from Action icon the action must verify if Query is assocuated with the Datasource ,,
+26,Active Datasource,Ensure exsisting Query the active datasource must not be deleted ,,
+27,Active Datasource,Ensure if a Query is inactive datasource must be deleted ,,
+28,Active Datasource,Ensure clickng on Edit option of the action icon it is observed that the user is navigated into Datasource pane ,,
+29,Query Pane ,"Ensure the user is able to with two Tab 
+1) Query Pane 
+2) Setting Tab 
+3) Query Name 
+4) Action Icon 
+5) Datasource selection
+6) RUN Icon 
+7) Snippets",,
+30,Setting Tab,"Ensure the setting Tab is disaplyed with toggle button and woks as expected
+1) Run query on page load
+2) Request confirmation before running query
+3) Query timeout ",,
+31,Setting Tab,Ensure Documents are disaplyed to user in setting tab and clicking on the setting the user is navigated to respective page ,,
+32,Query Tab ,"Ensure the following Fields are displayed to user
+1) Commands
+2) From email *
+3) Set Reply To Email (Toggle)
+4) To email(s) *
+5) CC email(s)
+6) BCC email(s)
+7) Subject 
+8)  Body
+8) Attachment(s)",,
+33,Query Tab ,On Empty mandatory fields the user must be displayed with appropriate error message ,,
+34,Query Tab ,On wrong  From EMail id to Field  an error message must be displayed to user,,
+35,Query Tab ,"Ensure under the Command section user is displayed with ""Send Email"" option which is selected by Default ",,
+36,Query Tab ,"Ensure user can add ""From EMail id"" to Field that is added which was added in creating the account ",,
+37,Query Tab ,"Ensure on adding multiple ""From EMail id"" user is displayed with appropriate error message ",,
+38,Query Tab ,Ensure on user is able to add single or multiple ID on CC email(s) and BCC email(s) field ,,
+39,Query Tab ,Ensure the user is able to add Subject into the field ,,
+40,Query Tab ,Ensure user is able to Run the query with empty Subject field ,,
+41,Query Tab ,Ensure user is able to add short Subject and Run the query,,
+42,Query Tab ,Ensure the user is able to RUN the query with Long Subject line ,,
+43,Query Tab ,Ensure the is able to add Body to the Query ,,
+44,Query Tab ,Ensure user is able to add multiple lines inside the Body of the Query ,,
+45,Query Tab ,Ensure user is able to add single line as Body of the Query ,,
+46,Query Tab ,Ensure user is able to bind the Filepicker in the Attachment section ,,
+47,Query Tab ,Ensure user is able to use Slash command inside the Attchment field and Body section ,,
+48,Query Tab ,Ensure user is able to RUN the query ,,
+49,Query Tab ,Ensure on any error the data is dispalyed to user under error section ,,
+50,Query Tab ,On Successful Email being sent the user is disaplyed with Successmessage under Response section ,,
+51,Query Tab ,Ensure user logs are displayed to user ,,
+52,Query Tab ,Under the Entity explorer tab user is dispalyed with Incoming and outgoing entities ,,
+53,Query Tab ,Ensure user is able to change Query name ,,
+54,Query Tab ,"Ensure user is able to click on Action icon and do following action 
+1) Copy to Page
+2) Move the Page
+3) Delete ",,
+55,Query Tab ,Ensure click on Copy to page list of options are dispalyed to user ,,
+56,Query Tab ,Ensure clicking  on Selected page the query is copied to respective page ,,
+57,Query Tab ,Ensure click on Move to page list of options are dispalyed to user ,,
+58,Query Tab ,Ensure clicking  on Selected page the query is moved to respective page ,,
+59,Query Tab ,Ensure clicking on the Delete option the query is deleted to user,,
+60,Query Tab ,Ensure user is displayed with connection on the right of the query pane,,
+61,Query Tab ,"Ensure clicking on ""back to Canvas"" user is navigated to respective page ",,
+62,Query Tab ,"Ensure user is able to click on ""Select Widget"" and able to navigate to respective canvas page",,
+63,Query Tab ,Ensure user is able to click on Snippets and appropriate Snippets is dispalyed to user ,,
+64,Entity Explorer,Ensure user is dispalyed to with Query name ,,
+65,Entity Explorer,Ensure user is able to delete the Query from the Entity explorer,,
+66,Entity Explorer,Ensure user is able to Change the name from the Entity explorer by clicking on Edit Name ,,
+67,Entity Explorer,Ensure user is able to click Show BIndings and added binding are displayed to user ,,
+68,Entity Explorer,Ensure user is able to copy the binding from the entity explorer,,
+69,Entity Explorer,Ensure user is able to close the binding option by clicking on the cross mark ,,
+70,Entity Explorer,"Ensure user is able to click on Action icon
+1) Copy to Page
+2) Move the Page
+3) Delete ",,
+71,Entity Explorer,Ensure the Delete option is highlighted in Red ,,

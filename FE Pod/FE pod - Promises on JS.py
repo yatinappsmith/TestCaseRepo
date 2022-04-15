@@ -1,12 +1,20 @@
 import json
 import requests
+import pandas as pd
 
 #Read token from file
 def read_token():
     token = ''
-    with open('token', 'r') as f:
+    with open('../token', 'r') as f:
         token = f.read()
     return token
+
+#Read repo from file
+def read_repo():
+    repo = ''
+    with open('../repourl', 'r') as f:
+        repo = f.read()
+    return repo
 
 class TestCase:
     def __init__(self):
@@ -30,7 +38,8 @@ class TestCase:
     def add_test_case_to_github(self):
         token = read_token()
         #url = 'https://api.github.com/repos/' + token + '/' + self.test_case_title + '/issues'
-        url = "https://api.github.com/repos/yatinappsmith/TestCaseRepo/issues"
+        #url = "https://api.github.com/repos/yatinappsmith/TestCaseRepo/issues"
+        url = read_repo()
         headers = {'Content-Type': 'application/vnd.github.VERSION.raw+json', 'Authorization': 'token ' + token}
         data = {'title': self.test_case_title, 'body': "### Steps\n" + self.test_case_steps + '\n### Expected behaviour\n'
                         + self.test_case_expected_result, 'labels': self.test_case_labels}
@@ -40,16 +49,17 @@ class TestCase:
 
 
 if __name__ == "__main__":
+    print("Complete")
     test_case = TestCase()
-    test_case.set_test_case_title("Python Test Case Title")
-    test_case.add_test_case_steps("Python Test Case Steps")
-    test_case.add_test_case_expected_result("Test Case Expected Result")
-    test_case.add_test_case_labels("Button Widget")
-    test_case.add_test_case_labels("Entity Explorer")
-    print(test_case.test_case_title)
-    print(test_case.test_case_steps)
-    print(test_case.test_case_expected_result)
-    print(test_case.test_case_labels)
-    #test_case.add_test_case_to_github()
-
-
+    df = pd.read_csv ('FE pod - Promises on JS.csv')
+    #loop through each line in the csv file
+    for index, row in df.iterrows():
+        test_case = TestCase()
+        test_case.set_test_case_title(row['Description'])
+        test_case.add_test_case_steps(row['Steps'])
+        test_case.add_test_case_labels(row['Type of test case'])
+        test_case.add_test_case_labels("Manual")
+        test_case.add_test_case_labels("JS Promises" )
+        print(test_case.test_case_title)
+        test_case.add_test_case_to_github()
+        dbg = 1

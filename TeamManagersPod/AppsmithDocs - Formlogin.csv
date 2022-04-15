@@ -1,0 +1,23 @@
+Form Login,sign up,scenario,,in localhost,,mar21regression,April 6,ap11
+enabled,enabled,"1. Both form login and sign up link should be enabled 
+2. The old user should be able to sign up successfully 
+3. All user should be able to sign up without restriction",sso cant be tested in dev.appsmith.com form flow works,this works,this works,works,works,works
+enabled,disabled,"1. The form login should be enabled
+2. Signup link should be enabled
+3. The old user should be able to sign in using form login as well as any SSO auth
+4. Only the invited user should be able to sign up 
+5. When the uninvited user try to sign up the error should be displayed ",sso cant be tested in dev.appsmith.com form flow works,this works ,this works,works,works,works
+disabled,enabled,"1. The form Login should be disabled
+2. The sign up link should also be disabled
+3. The user should be able to  sign in  with any sso form 
+4. The user who has been invited / not invited to the application should be able to signup with the sso ",sso cant be tested in dev.appsmith.com form flow works,this works,,works,works,
+disabled,disabled,"1. The form Login should be disabled
+2. The sign up link should also be disabled
+3. The user who has access to the application should be able to sign in or sign up with SSO
+4. Only the user who has been invited to the application should be able to signup with the sso ",sso cant be tested in dev.appsmith.com form flow works,this works, file issue doesnt work with github,,works,works
+,,,,,The un auntorized user should be showed in ui Not just in docker,,,
+,For google auth,,,,,,,
+,,all domain all users,,,,,,
+,,all domain invited users,,,,,,
+,,specific domain all users,appsmith.com all users,all with gmail ,,,,
+,,specific domain invited users,appsmith.com invited users,specific with gmail ,,,,

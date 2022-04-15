@@ -1,0 +1,234 @@
+Sl no,Usecases for Application Page,Regression_3rdaug,regression_13aug
+1,"The Application Page should be displayed with following detailes:
+1.Appsmith logo on top left corner
+2.The user Name on topright corner
+3.The left pane should be displayed with 
+a.Organizations
+b.Getting started 
+4.Search apps search bar
+5.Share button
+6.Organization name with dropdown icon
+7.All the apps(only 5 apps in a row)
+8.Whats New? Text on bottom left corner
+9.Question mark icon on bottom right corner",pass,pass
+2,"When the user click on user Icon the following details should be displayed: 
+a.Username in blue color
+b.User email id
+c.Theme Toggle
+d.Edit Profile menu
+e.Signout menu",pass,pass
+3,"The theme toggle should be displayed with 2 option 
+1.Light 
+2.dark",pass,pass
+4,When the user select the light theme the background of the page should be diplsyed White,pass,pass
+5,When the user select the dark theme the background of the page should be diplsyed Black,pass,pass
+6,The user should be able to click on edit profile menu,pass,pass
+7,"The user user should be navigated to Profile page and follwoing detailes should be displayed:
+1.General tab
+a.The display name link
+b.Display name label
+c.Email
+d.Reset Password link",pass,pass
+8,The user should be able to upload the image from the system the image size should not be more than 3 mb,failed,failed
+9,"The image can be PNG,JPEG format",,
+10,The user should be able to edit the name of the user from display name placeholder and this placeholder cant be empty,pass,pass
+11,The email section should be dipslayed with the Email of the user,pass,pass
+12,When the user click on reset password link the user should be logged out automatically and the reset email should be sent to user,failed we wont get email,failed we wont get email
+13,"The email should be displayed in Below format
+Hello,
+
+Forgot the password to your Appsmith account? No worries, we've got you covered.
+Reset Password button
+The link will expire in 48 hours. If you didn't request a password reset, you can safely ignore this email.
+
+Cheers
+Devs at Appsmith",failed we wont get email,failed we wont get email
+14,When the user click on reset password button the user should be navigated to reset password pop up,failed we wont get email,failed we wont get email
+15,"The new reset password pop up should be displayed with follwoing detailes:
+1.Reset Password text
+2.Back to sign in Link
+3.New password Placeholder
+4.reset Button",failed we wont get email,failed we wont get email
+16,The reset Button should be diabled till the user enter the new password,failed we wont get email,failed we wont get email
+17,"When the user should nbe able to enter the new password in Newpassword Placeholder User should have to enetr the password of 6 character else the error message should display ""Please provide a password with a minimum of 6 characters""",failed we wont get email,failed we wont get email
+18,"When the user enter the new password and click on reset button the success message should be displayed"" Your password has been reset"" with login link",failed we wont get email,failed we wont get email
+19,When the user click on Login Link the user should be navigated to Sign in Page,failed we wont get email,failed we wont get email
+20,The user should be able to sign in with email and the new password,pass,pass
+21,When the user click on Signout menu the user should be navigated to sign in Page,pass,pass
+22,The organization section should be display with all organization names which the user has access along with the Create organization menu,pass,pass
+23,"When the user click on create new organization the new organization should get created with default name""Untitled organization""",pass,pass
+24,The user is allowed to click on any Organization name that they have access for,pass,pass
+25,When the user click on any one organization name all the apps related to that organization should be displayed in the right side,pass,pass
+26,"The get started section should be displayed with following menu:
+a.Documentation 
+b.Welcome Tour",pass,pass
+27,When the user click on Documentation the user should be navigated to new window the documentation list,pass,pass
+28,"when the user click on welcome tour the onboadring should be displayed  ""Welcome to Appsmith!
+We'd like to show you around! Let's build an app for remote teams to do async meeting updates."" with No Thanks and lets go button",pass,pass
+29,When the user click on No Thanks Button the Onboarding pop up should be closed,pass,pass
+30,When the user click on Lets go The user should be naviagted to super stand up App page whioch has Start building button,failed,pass
+31,"1.when user click on Start bulding button the user should be navigated to datasources page with a pop up ""Mission 1
+Query the Super Updates DB
+1
+Create a new query that can fetch standup updates from across the multiverse
+2
+Hit Run to check it's response""
+The paginatioon should be on left corner and Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",failed,pass
+32,"The next Pop up should be ""Mission 2
+Build the Standup Dashboard
+1
+Click the add widget button to open the widgets panel
+2
+Drag a table so that heroes can view each other's updates.
+The paginatioon should be on left corner and Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",failed,pass
+33,"The next pop up should be ""Mission 3
+Connect Real Data
+1
+Use your javascript superpowers to populate the static TableData with live query results.
+The paginatioon should be on left corner and Show me how button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",failed,pass
+34,"The next pop up should be. ""Mission 3
+Connect Real Data
+1
+Use your javascript superpowers to populate the static TableData with live query results.
+Use the snippet below inside TableData
+{{fetch_standup_updates.data}}
+The paginatioon should be on left corner and  Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",failed,pass
+35,"The next pop up should be ""Mission 4
+Capture Hero Updates
+1
+Drag an input so that heroes can enter their daily updates.
+2
+Create a query in the OnSubmit action to insert a standup_update.
+The paginatioon should be on left corner and Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",failed,pass
+36,"The Next pop should be ""Mission 5
+Deploy the Standup Dashboard to save the world from meetings!""
+The paginatioon should be on left corner and  Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",failed,pass
+37,"The next pop up should be""Great Job! You built an app that saves your team from boring meetings
+WHAT YOU’VE LEARNT
+Query a database directly
+Build a dashboard without HTML/CSS
+Read/Write data to the UI using JS
+Deploy an app with a Click""
+The back button and Next mission button should be displayed",failed,pass
+38,When the user click on back button the user should navigate to application page,failed,pass
+39,When user click on Next mission The user should be navigated to documantation page,failed,pass
+40,When the user can search for apps from Search for apps  input box the application should. be displayed,pass,pass
+41,When the org name is too big the tooltip should be displayed,pass,pass
+42,"When the admin click on application name following details is displayed 
+1.Organization setting
+2.Import application
+3.Share
+4.member
+5.Leave Organization ",pass,pass
+43,When the user click on edit icon the user should be allowed to change the org name,pass,pass
+44,when the user click on Org setting the user should be navigated to General tab Which is selected by default,pass,pass
+45,"The genaral tab should be displayed with follwoing details
+1.Organization name Input box the user can edit the  Organization name
+2.Upload Logo file picker->the user can select the image from the system
+3.Website input box->the user can add the Website details
+4.Email Text box the user can enter the email id",pass,pass
+46,"The members tab should be displayed with following columns
+1.Email ->all the user who has access to application all the email id displayed in the each row
+2.name->the username shoulkd be displayed here
+3.Role->The user role should be displayed 
+4.The delete Column should be displayed with delete Icon",pass,pass
+47,when the user finish the onboarding the stand up app should be craeted and displayed under the org,failed,pass
+48,"When the user click on delete Icon the Pop shoukld be displayed ""Are you sure?
+You want to remove xxx.com from this organization"" with cancel and remove button",pass,pass
+49,If the user click on remove button the User should be deleted from org,pass,pass
+50,When user click on canacel button the pop should be closed,pass,pass
+51,"When the user is a last admin and tries to delete himself then the error message ""The last admin can not be removed from an organization"" should be displayed",pass,pass
+52,The org name should be displayed on the top left corner when user click on it the user should be navigated to application page,pass,pass
+53,Click on organization name from the dropdown click on Import button,pass,pass
+54,"The pop up will be displayed ""Import Application
+Drag & Drop files to upload or Browse button "" and disabled Import button",pass,pass
+55,When the user click on browse button the file explorer should open with the file list,pass,pass
+56,when the file explorer open the file which are of json format only those should be displayed,pass,pass
+57,the user should be able to select only files which are in Json format,pass,pass
+58,Once the user import it the file name should be display on pop up and import button should be enabled,pass,pass
+59,When the user click on  import button the application should be displayed under Organization,pass,pass
+60,When the user click on close icon the Pop up should be closed,pass,pass
+61,"When the user click on share button the pop should be displayed following text
+1.Invite Users to org name
+2.Enter email Placeholder
+3.Select role dropdown
+4.Diabled invite button
+5.Mange user link",pass,pass
+62,The user should manually enter the email address in enter email placeholder,pass,pass
+63,"The select role dropdown should be displayed with following options:
+1.Administrator ""Can modify all organization settings including editing applications, inviting other users to the organization and exporting applications from the organization""
+2.Developer ""Can edit and view applications along with inviting other users to the organization""
+3.App Viewer ""Can view applications and invite other users to view applications""",pass,pass
+64,The invite button should be enabled after user enter the email and select the role,pass,pass
+65,When the user click on invite button the invite should be sent to the added user and the correct role should be assigned to the user,pass,pass
+66,The newly added user name should be displayed in the list,pass,pass
+67,When the user click on Manage users link the user should be navigated to memebers page,pass,pass
+68,When user click on members link the user should be navigated to memebers page,pass,pass
+69,When the admin user click on Leave organization menu in the application dropdown the error message should display,pass,pass
+70,When the user has a Developer/Viewer access then when the user click on Application dropdown only leave organization menu should be present,pass,pass
+71,When the user has a Developer access the User should be able to edit the application and the Export Should not be allowed,pass,pass
+72,When the user has a viewer access the user should only be able to lunch and view the application and the Export Should not be allowed,pass,pass
+73,"When the Admin User click on Organization setting and goto memebers tab->There should be delete ICon Added for all the users ""Including Admin""",pass,pass
+74,The email coloum should display with User email,pass,pass
+75,The name coloum should display with user display name,pass,pass
+76,Role should be displayed with user Role,pass,pass
+77,the Delete Column should be displayed with Bin Icon,pass,pass
+78,The Admin user should be Able to delete the Developer and viewer successfull once its deleted cross verify with viwer and developer account that they dont have access anymore,pass,pass
+79,The Developer and Vivwer has the Previlage to Leave the organization when they Leave the organization that Application anme shouls not be displayed in Application page,pass,pass
+80,"When there is only one admin and if he try to leave the organization the the error message should be displayed as""The last admin can not be removed from an organization""",pass,pass
+81,If there is only one admin for organization that admin can leave organization only after assigned any other user as a Admin,pass,pass
+82,Edit the display name in the edit profile section and check the name is updated in the name column in the members Tab and also under the username dropdown ,pass,pass
+83,"when the user click on 3 dot icon on Application folloeing are the details should be displayed 
+1.Duplicate
+2.fork
+3.Export
+4.Delete",pass,pass
+84,when the user click on the duplicate the application copy should be created in the same org ,pass,pass
+85,When the user click on fork The pop up should be displayed with All the org name and the radio button should be displayed so that user can select any of the org along with Close and fork button ,pass,pass
+86,When the user select any one org and click on fork the application should get forked on the selected org,pass,pass
+87,when user click on close button the pop up should be closed,pass,pass
+88,The user with admin access should be able to see the export Button ,pass,pass
+89,when user click on export button the appilcation is download in json format,pass,pass
+90,When the user click on delete button the application should get deleted,pass,pass
+91,When the user click on edit icon the user ahould be able to add the application name,pass,pass
+92,Teh user should be able to select the color and the icon for the application,pass,pass
+93,"When the user click on share button the pop should be displayed following text
+1.Invite Users to org name
+2.Enter email Placeholder
+3.Select role dropdown
+4.Diabled invite button
+5.Mange user link",pass,pass
+94,Share should works on 3 roles,pass,pass
+95,"If the admin user click on the share then the role tooptip should be displayed with all three roles
+1.1.Administrator ""Can modify all organization settings including editing applications, inviting other users to the organization and exporting applications from the organization""
+2.Developer ""Can edit and view applications along with inviting other users to the organization""
+3.App Viewer ""Can view applications and invite other users to view applications""",pass,pass
+96,"If the Developer user click on the share then the role tooptip should be displayed with all two roles 
+2.Developer ""Can edit and view applications along with inviting other users to the organization""
+ 3.App Viewer ""Can view applications and invite other users to view applications""",pass,pass
+97,"If the viewer user click on the share then the role tooptip should be displayed with one role
+3.App Viewer ""Can view applications and invite other users to view applications""",pass,pass
+98,based on the access given to the new user same acces should be present for new users,pass,pass
+99,When the user clicks on whats new the Products updates pop up should be displayed,pass,pass
+100,"When the user click on ? icon the pop up should be displayed with the following
+1.Documantation
+2.Report a bug
+3.Join a discord
+4.Chart with us",pass,pass
+101,When the user click on documenatation the user should be navigated to documenation link in the new tab,pass,pass
+102,when user click on Report a bug the git hub page should be opened if its. a new user then the Auth should be displayed,pass,pass
+103,Join discord should open the discord login page,pass,pass
+104,Chat with us should open the bot page,failed,failed
+105,If the application is made public then user copies the link and opens it then the application should open and in the top bar the user should be asked to signin  alwyas check this in incognito mode,,

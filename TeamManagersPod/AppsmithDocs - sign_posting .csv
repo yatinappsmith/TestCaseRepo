@@ -1,0 +1,176 @@
+usecases,DP->,
+"validate the  ""your account "" tooltip when the user hover on User name icon in the application page",,questions
+"Validate the  ""user names "" tooltip when the user hover on the user icon next to the share button in all the organization ",,1.The welcome tour should be displayed only when the canavs is opened
+"Validate the ""Help and resource"" tooltip when user hover on ? icon on bottom right corner of application page",,when there are multiple users how the tooltip should displayed in the application 
+"Validate the ""Application deleted UNDO"" toast bar when the user delete any application from application page",,now the datasources is  displayed instaed of API and databases
+Validate that the toast bar should be displayed on the top right pane,,
+Validate that there should be only one toast bar displayed at a time,,
+validate if the user clicks on Undo from toast bar the the action should be retrived,,
+Validate that the onboadring pop up should be displayed when the user navigate to canavas and it should not be displayed on the application page,,
+"The welcome tour pop up should be displayed with 2 button 
+1.Not right now
+2.Lets Go",,
+Validate if the user click on Lets go button then the flow is same as before the stand up app should be created,,
+Validate that if the user click on Not right now then modal will minimise to the bottom state so they can reactive it if needed.,,
+"Validate the ""Back to home page"" tooltip should be displayed when user hover on the appsmith logo on top left corner",,
+"Validate the ""Rename Appliaction"" tooltip should be displayed when user hover on the default application name",,
+"Validate the ""Add a new page"" tooltip should be displayed when user hover on ""+"" icon next to pages text in Entity pane",,
+"Validate the ""Find and add widget"" tooltip should be displayed when user hover on ""+"" icon next to widgets text in Entity pane",,
+"Validate the ""Find and add widget"" tooltip should be displayed when user hover on ""+"" icon next to widgets text in Entity pane",,
+"Validate the ""Help and resources"" tooltip should be displayed when the user hover on ? in the menu bar",,
+"Validate the ""copy element"" tooltip when the user hover on Copy icon when the user expand the Widgets",,
+"Validate the ""Choose how your application looks on desktop, tablet and mobile devices"" tooltip when the user hover on the responsive icon on top of the canvas",,
+"Validate the ""All changes saved""  tooltip when user hover on Saved status on the header section",,
+"Validate the ""Unable to save changes""  tooltip when user hover on Unable ro save  status on the header section",,
+"Validate the ""Deploy the current version of the application"" tooltip when the user hover on the deploy button",,
+"Validate the ""Invite your team to Appsmith"" tooltip when user hover on the share button when this is users first share and till now no one has the access to the application other than the creator",,
+"Validate the ""Shared with 1 other"" tooltip when user hover on the share button when this is users had shared the application with only 1 user ",,
+"Validate the ""Shared with 3 people"" tooltip when the user hover on share button , this should display when the user has shared app with multiple users so the count should be correct",,
+"Validate the ""Your account"" tooltip when user hover on the username icon",,
+"Validate the ""Open bug tracker"" tooltip when user hover on the debbuger icon",,
+"Validate ""New page added"" toast bar when user add the new page",,
+"Validate the ""Widget ‘name of the widget’ copied"" toast should be displayed when the user copy any of the widget",,
+"Validate the ""Deleting ‘name of the widget’ Widget’ UNDO"" toast should be displayed when the user delete any of the widget",,
+"Valdate that when the user click on Undo the action The action should be canceled and the page should like before and the following toast message should be displayed ""Action undone""",,
+"Validate that when the user successfully delet the widget following tost bar should be displayed ""‘name of the widget’ Widget deleted""",,
+"Validate the ""Page ‘page name’ hidden"" toast should be dsplayed when the user hide any of the pages ",,
+"Validate the ""New page added"" toast when the user add the new page ",,
+"Validate the ""Page ‘page name’ deleted"" toast should be dsplayed when the user delete any of the pages ",,
+"Validate the ""Page ‘page name’ set as Homepage "" toast should be dsplayed when the user set any of the page as a home page",,
+"Validate the ""Project deployed "" toast should be dsplayed when the user deploy the application",,
+"Validate the ""People added "" toast should be dsplayed when the new user is added to the application",,
+"Validate the ""Person removed"" toast should be dsplayed when the user is delete from the application",,
+Signbposting onboarding for the new user only,release_13sep,
+When the user login for the first time the user should be navigated directly to the canvas and the pop should be displayed,,
+"The pop should contains following detailes:
+1.Here’s how Appsmith works header
+2.Connect your
+database or API Text with an image
+3.Connect queried data to pre-built widgets and customise with Javascript text with an image
+4.Instantly publish and share your apps  text with an image
+5.Build my first app button
+6.Want more help getting started, text followed by Let’s build an app together.text link
+7.close icon",,
+When the user click on Lets buils an app together the Onboarding should start and the onboarding flow will be same as our currenbt onboarding,,
+"1.when user click on Start bulding button the user should be navigated to datasources page with a pop up ""Mission 1
+Query the Super Updates DB
+1
+Create a new query that can fetch standup updates from across the multiverse
+2
+Hit Run to check it's response""
+The paginatioon should be on left corner and Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",,
+"The next Pop up should be ""Mission 2
+Build the Standup Dashboard
+1
+Click the add widget button to open the widgets panel
+2
+Drag a table so that heroes can view each other's updates.
+The paginatioon should be on left corner and Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",,
+"The next pop up should be ""Mission 3
+Connect Real Data
+1
+Use your javascript superpowers to populate the static TableData with live query results.
+The paginatioon should be on left corner and Show me how button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",,
+"The next pop up should be. ""Mission 3
+Connect Real Data
+1
+Use your javascript superpowers to populate the static TableData with live query results.
+Use the snippet below inside TableData
+{{fetch_standup_updates.data}}
+The paginatioon should be on left corner and  Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",,
+"The next pop up should be ""Mission 4
+Capture Hero Updates
+1
+Drag an input so that heroes can enter their daily updates.
+2
+Create a query in the OnSubmit action to insert a standup_update.
+The paginatioon should be on left corner and Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",,
+"The Next pop should be ""Mission 5
+Deploy the Standup Dashboard to save the world from meetings!""
+The paginatioon should be on left corner and  Do it for me button on right
+2.The end tour text should be displayed on the top bar right corner 
+3.When user click on it the tour should be ended",,
+"The next pop up should be""Great Job! You built an app that saves your team from boring meetings
+WHAT YOU’VE LEARNT
+Query a database directly
+Build a dashboard without HTML/CSS
+Read/Write data to the UI using JS
+Deploy an app with a Click""
+The back button and Next mission button should be displayed",,
+When the user click on back button the user should navigate to application page,,
+When user click on Next mission The user should be navigated to documantation page,,
+"when the user click on close icon the pop up should be closed and the canavas should be displayed with following detailes:
+1.A logo
+2.Start by adding your first data source text in bold
+3.Adding a data source makes creating applications more powerful. Don’t worry if you don’t have any data to hand, we have sample data you can use text
+4.Add a data source button
+5.Alternatively you can also text followed by ""add Widgets first""text link",,
+"When the user click on build my first app button the user should be navigated to canavas and following detailes should be displayed:
+1.A logo
+2.Start by adding your first data source text in bold
+3.Adding a data source makes creating applications more powerful. Don’t worry if you don’t have any data to hand, we have sample data you can use text
+4.Add a data source button",,
+"there should be white progress bar displayed on top of the entity section the default progress bar status should be ""Get started""
+First: Add a datasource
+empty horizontal bar",,
+when the user click on Add a datasource button the user should be navigated to the Create new data source page,,
+The user should be allowed to click on any database / api/ Mock data sources and allowed to connect to it ,,
+Without clicking on a Add a datasource button if the user click on Add widget button the user should be navigated to empty canvas,,
+"when the user successfully add the datasource the new page should be displayed with the following detailes:
+1.BACK button
+2.👋 Welcome to Appsmith! text
+3.Let’s get you started on your first application, explore Appsmith yourself or follow our guide below to discover what Appsmith can do.
+4.1 of 5 complete 
+5.Connect your data source to start building an application. text should be displayed with the green tick mark at the beggening(the green tick mark represents that the action had been completed)
+6.tick mark followed by ""Create a query of your data source"". text and Create a query button displayed in orange button
+7.tick mark followed by ""Start visualising your application using widgets"". text followed by Add widget button displayed in white color
+8.tick mark followed by ""Connect your data to the widgets using JavaScript"". text followed by Connect data to widget button displayed in white color
+9.tick mark followed by ""Deploy your application, and see your creation live."" text followed by deploy application button",,
+"Now the progress bar  displayed on top of the entity section and progress bar status should be ""Get started""
+Next: Create a query
+ horizontal bar should be filled 20% with orange color",,
+Now the user should be allowed to click on Create a query button from the Welcome to Appsmith page Once the user click on Craete a query button the new query should be Opened,,
+The user should allowed to write his own query,,
+"once the query is created the Progress bar on the Enitty explorer should be displayed as :
+""Get started""
+Next:  Add a widget
+ horizontal bar should be filled 40% with orange color",,
+"Now when the user click on Back button the user should be displayed with the  following detailes:
+1.Add a widget Image
+2.Next, add a widget to start displaying data text
+3.Great job adding a data source! The next thing you can do is add widget to start start making your data visual. Text
+4.Add a Widget Button
+5.Alternatively you can also share your application link",,
+"When the user click on Add a widget button the user should be navigated to Canvas "" Drag nd Drop the widget "" text should be highlighted and in the entity pane should be displayed with widgets",,
+"once the user click on ""add a widget button"" the Progress bar on the Enitty explorer should be displayed as :
+""Get started""
+Next:  Bind your data
+ horizontal bar should be filled 60% with orange color",,
+If the user click on share your link then the share pop up should be displayed and the User can enter the email and role and share with any of the users,,
+Once the user drag and drop the widget the User should be allowed to bind the data ,,
+"Once the user bind the data to the widget the progress bar in the entity pane should be displayed as follows:
+""Get started""
+Next:   Deploy your project
+ horizontal bar should be filled 80% with orange color",,
+"When the user click on Deploy the progress bar in the entity pane should be displayed as follows:
+""Get started""
+Next: Completed 🎉
+ horizontal bar should be filled 100% with orange color",,
+"The progress bar can be displayed in 2 color 
+1.Orange when the user is on checklist page
+2.white color when the user is on canvas",,
+The user can navigate to chceklist page anytime by click on the progress bar,,
+The progress bar is displayed with the close icon when the user click on it the onboarding process should stop,,
+"By default the application created in this process is names as the ""My first application""",,
+When the user complete each step in the checlist window the green check box should get added and the Button for performing th action should be removed,,
+Whenever the user click on back button the canvas should be displayed with the next step detailes,,

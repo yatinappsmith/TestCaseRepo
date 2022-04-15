@@ -1,0 +1,84 @@
+Test case number,STEPS ,AUTOMATED BY DEV/QA,Feature,EXPECTED RESULT,Type of test case,Pod,Area of Focus
+1,,NO,Connections ,Ensure is user is disaplyed with Twilio setup on Datasource page along with the symbol,Positive ,BE CODERS POD ,TWILIO
+2,,NO,Connections ,Ensure the user is able to click on the  Twilio for establishing connection ,Positive ,BE CODERS POD ,TWILIO
+3,,NO,Connections ,Ensure user is disaplyed with Auth type and user is able to select Basic Auth ,Negative,BE CODERS POD ,TWILIO
+4,,NO,Connections ,On selection user must be displayed with Username and Password,Positive ,BE CODERS POD ,TWILIO
+5,,NO,Connections ,"Ensure user is disaplyed with following button 
+1) Delete
+2) Test (Non -Functional)
+3) Save 
+4) Twilio Logo
+5) Edit name of Datasource
+6) Back option ",Positive ,BE CODERS POD ,TWILIO
+6,,NO,Connections ,Ensure clicking on Save option the DS gets saved ,Positive ,BE CODERS POD ,TWILIO
+7,,NO,Connections ,Ensure clicking on Delete the DS gets deleted ,Negative,BE CODERS POD ,TWILIO
+8,,NO,Connections ,Ensure on delete if the DS is associated with a query the DS must show an error and unable to delete ,Negative,BE CODERS POD ,TWILIO
+9,,NO,Connections ,Ensure the Password is encrypted,Positive ,BE CODERS POD ,TWILIO
+10,,NO,Connections ,Ensure clicking on the back button user should be navigated to active Datasources page ,Negative,BE CODERS POD ,TWILIO
+11,,NO,Active Datasource,Ensure the saved Twilio is dispalyed under Active tab section ,Positive ,BE CODERS POD ,TWILIO
+12,,NO,Active Datasource,"Ensure the saved Twilio is dispalyed with the following 
+1) Generate CURD (Inactive)
+2) New Query 
+3) Action Icon 
+a) Edit 
+b) Delete",Positive ,BE CODERS POD ,TWILIO
+13,,NO,Active Datasource,Clicking on New Query user must be navigated to Query Pane ,Positive ,BE CODERS POD ,TWILIO
+14,,NO,Active Datasource,Clicking on Delete from Action icon the action must verify if Query is assocuated with the Datasource ,Negative,BE CODERS POD ,TWILIO
+15,,NO,Active Datasource,Ensure exsisting Query the active datasource must not be deleted ,Positive ,BE CODERS POD ,TWILIO
+16,,NO,Active Datasource,Ensure if a Query is inactive datasource must be deleted ,Negative,BE CODERS POD ,TWILIO
+17,,NO,Active Datasource,Ensure clicking on Edit option of the action icon it is observed that the user is navigated into Datasource pane ,Positive ,BE CODERS POD ,TWILIO
+18,,NO,Query Pane ,"Ensure the user is able to with two Tab 
+1) Query Pane 
+2) Setting Tab 
+3) Query Name 
+4) Action Icon 
+5) Datasource selection
+6) RUN Icon 
+7) Snippets",Positive ,BE CODERS POD ,TWILIO
+19,,NO,Setting Tab,"Ensure the setting Tab is disaplyed with toggle button and woks as expected
+1) Run query on page load
+2) Request confirmation before running query
+3) Query timeout ",Positive ,BE CODERS POD ,TWILIO
+20,,NO,Setting Tab,Ensure Documents are disaplyed to user in setting tab and clicking on the setting the user is navigated to respective page ,Positive ,BE CODERS POD ,TWILIO
+21,,NO,Query Pane ,Ensure user can select the from the list of Command ,Positive ,BE CODERS POD ,TWILIO
+22,,NO,Query Pane ,"Ensure user is displayed with following command 
+1) Create Message
+2) Delete Message
+3) Fetch Message
+4) List Messages
+5) Schedule Message
+6) Update Message",Positive ,BE CODERS POD ,TWILIO
+23,,NO,Query Pane ,"Ensure user is able to select Create message cmd and following fields are dispalyed to user 
+1) Twilio Account SID
+2) To 
+3) From 
+4) Body ",Positive ,BE CODERS POD ,TWILIO
+24,,NO,Query Pane ,Ensure mandatory Field are added ,Negative,BE CODERS POD ,TWILIO
+25,,NO,Query Pane ,Ensure the user is displayed appropriate error messages on wrong field data,Negative,BE CODERS POD ,TWILIO
+26,,NO,Query Pane ,Ensure Long body form is added ,Negative,BE CODERS POD ,TWILIO
+27,,NO,Query Pane ,Ensure use method from the drop down ,Negative,BE CODERS POD ,TWILIO
+28,,NO,Query Pane ,Ensure user is able change name from the pane ,Negative,BE CODERS POD ,TWILIO
+29,,NO,Query Pane ,Ensure user is able to add longer name ,Negative,BE CODERS POD ,TWILIO
+30,,NO,Query Pane ,Ensure user is able to add special characters into the name from Pane,Negative,BE CODERS POD ,TWILIO
+31,,NO,Query Pane ,Ensure user is able to save the queries ,Negative,BE CODERS POD ,TWILIO
+32,,NO,Query Pane ,Ensure user is able to reopen the query pane ,Positive ,BE CODERS POD ,TWILIO
+33,,NO,Query Pane ,Ensure user is able to edit the query pane and the changes gets saved ,Negative ,BE CODERS POD ,TWILIO
+34,,NO,Query Pane ,Ensure user is able to COPY query into the same page from Query Pane ,Positive ,BE CODERS POD ,TWILIO
+35,,NO,Query Pane , Ensure user is able to COPY query into the Different  page from  Query Pane  ,Positive ,BE CODERS POD ,TWILIO
+36,,NO,Query Pane , Ensure user is able to MOVE query into the Different  page from  Query Pane ,Positive ,BE CODERS POD ,TWILIO
+37,,NO,Query Pane ,Ensure user is able to Name conventions are appropriate when moved/Copied ,Positive ,BE CODERS POD ,TWILIO
+38,,,Query Pane ,Ensure User is able to Switch between datasources ,Positive ,BE CODERS POD ,TWILIO
+39,,NO,Entity explorer,Ensure user is able to see the query in the entity exporer,Positive ,BE CODERS POD ,TWILIO
+40,,NO,Entity explorer,Ensure user is able to change name from the Entity explorer ,Positive ,BE CODERS POD ,TWILIO
+41,,NO,Entity explorer,Ensure user is able to COPY query into the same page from entity explorer ,Positive ,BE CODERS POD ,TWILIO
+42,,NO,Entity explorer, Ensure user is able to COPY query into the Different  page from entity explorer ,Positive ,BE CODERS POD ,TWILIO
+43,,NO,Entity explorer, Ensure user is able to MOVE query into the Different  page from entity explorer ,Positive ,BE CODERS POD ,TWILIO
+44,,NO,Entity explorer,Ensure user is able to Name conventions are appropriate when moved/Copied ,Negative ,BE CODERS POD ,TWILIO
+45,,NO,Entity explorer,Ensure user is able to delete the query from the Entity explorer,Positive ,BE CODERS POD ,TWILIO
+46,,NO,Entity explorer,Ensure user is able to add special charatcers as name and is reflected into the ,Positive ,BE CODERS POD ,TWILIO
+47,,NO,Entity explorer,Ensure user is able to copy the binding from the entity explorer and bind to a widget ,Positive ,BE CODERS POD ,TWILIO
+48,,NO,Entity explorer,Ensure user is able to click Show BIndings and added binding are displayed to user ,Positive ,BE CODERS POD ,TWILIO
+49,,NO,Entity explorer,Ensure user is able to copy the binding from the entity explorer,Positive ,BE CODERS POD ,TWILIO
+50,,NO,Entity explorer,Ensure user is able to close the binding option by clicking on the cross mark ,Positive ,BE CODERS POD ,TWILIO
+51,,NO,Entity explorer,Ensure to add longer query name and observe the behaviour of the entity explorer,Negative ,BE CODERS POD ,TWILIO
+52,,NO,Entity explorer,Ensure to add longer query name and observe if it is truncated in the entity explorer ,Positive ,BE CODERS POD ,TWILIO

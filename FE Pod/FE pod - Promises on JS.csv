@@ -1,0 +1,36 @@
+Description,Is Test Automated or Not,Type of test case,Steps,Expected Result,Actual Result,Test Result/ Comments
+Test async await,,Positive,"{{(async function(){
+  const res = await fetchAlbums.run();
+  const res2 = await fetchTopTracks.run({ count: res[0].tracks});
+  await storeValue( ""test2"", res2.args.count );
+  await showAlert(appsmith.store.test2);
+})()}}",,,
+Test .then and .catch,,Postitive,"fetchAlbums: () => {
+                console.log(Select1.selectedOptionLabel)
+                return fetchAlbums.run()
+                .then(() => {
+                        console.log(""Showing top tracks of "" + this.artist)
+                })
+                .catch(() => showAlert(""Unable to show top tracks of "" + this.artist))
+        }",,,
+Test Promise.race(),,Positive,"Promise.race([
+    MockApi.run({ count: 45 }),
+    MockApi.run({ count: 65 })
+  ])
+  .then((res) => {
+    showAlert(`Winner: ${res.args.count}`)  })",,,
+Test storeValue,,Positive,"{{
+  storeValue('test', Date())
+    .then(() => showAlert(appsmith.store.test))
+}}",,,
+Test resolve,,Positive,"{{
+  new Promise((resolve) => {
+    resolve(""We're on planet"")
+  })
+  .then((res) => {
+    return res + "" Earth""
+  })
+  .then((res) => {
+    showAlert(res)
+  })
+}}",,,

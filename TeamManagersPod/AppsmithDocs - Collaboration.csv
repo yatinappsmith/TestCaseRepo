@@ -1,0 +1,135 @@
+Sl no,Usecases for collaboration Page,27-Jul,06-Aug,16th sep,,,
+1,There should be message box and Pencil Icon should be displayed on header section,pass,pass,pass,,,
+2,Verify that by default the edit Icon should be selected,pass,pass,pass,,,
+3,"Verify that the tooltip ""Edit Mode"" is displayed when the user hover on Pencil Icon and tooltip ""Comment Mode""should be displayed when user hover on the message box Icon",pass,pass,pass,,,
+4,"From keyboard when the user click on ""C"" the comment mode should get activated and when we click on V the edit mode should get activated",pass,pass,pass,,,
+5,Suppose the first time user click on comment icon the onboarding should be displayed ,pass,pass,pass,,,
+6,If the user is as admin and developer the onboarding should be different ,pass,failed,,,,
+7,If the user is an viwer only then the onboarding should be different,pass,failed,,,,
+8,"once the onboarding finish the comment icon should highlight with red dot with the tooltip ""Click on the icon to access comments""",pass,failed in Viwer the highlight happen for bopth the icon instaed of one,,,,
+9,"The tooltip should be displayed on Canvas ""Click anywhere on the canvas to leave a comment""",pass,pass,,,,
+10,"when user add his first comment the Bot should be displayed with following messge ""Hello! 👋 I'm here to help you with your app!
+You can get help from team appsmith by tagging @appsmith in your comment. Feel free to say Hi!"" and the tooltip should be displayed on resolve button ""resolve this comment when you're done",pass,pass,,,,
+11,"When the user resolve the comment the 2nd bot should get triggered with new id""0"" ""Apps get shipped faster when team members are involved early on!
+Invite a teammate to gather requirements, brainstorm, or get some feedback using the @ symbol followed by their email.""",pass,pass,,,,
+12,If the user tries to tag the new users inside the bot comment threads the comment should not be visible for the taged users,failed,failed,,,,
+13,Tag appsmith and check the support email is recieved or not,no,no,,,,
+14,for the viewer the bot comments should not be displayed,pass,pass,,,,
+15,When the user click on Message box Icon there should be a comment section on the left pane,pass,pass,,,,
+16,When the User Place the comment Box the comment box color should change to orange and user should be able to add comments,pass,pass,,,,
+17,"The comments pop up should be displayed with ""Add a comment use@ to mention Placeholder""
+1.Cancel button
+2.Post Button
+3.EMoji",pass,pass,,,,
+18,"In the Add comment Placeholder the user should be able to add comments in the placeholder
+check->Empty Spaces are Not Allowed",failed,failed,,,,
+19,When the user click on cancel button the pop up should be closed,pass,pass,,,,
+20,When there is no comment added the post button should be disabled when the user add the comment the post button should be enabled,pass,pass,,,,
+21,when the user click on the post button the comment should get added in the commenta pane and the pop up should be closed,pass,pass,,,,
+22,when the user enter @ in comment section All the users working on that Application name should be displayed in dropdown the selected user name should be displayed in Comments section Note: the user names should be in alphabetical order',failed,failed,,,,
+23,When the user try to add the user who is not working in the application then the there should be a button invita new user click on it application share pop up should be displayed and the user should eb able to invite the new user,pass,pass,,,,
+24,"The when the user click on Emoji the emoji pop up should be displayed it should be displayed with following detailes:
+1.Search bar
+2.Frequently Used emoji
+3.Other Emoji",pass,pass,,,,
+25,In the search Bar the user should be able to search the name of emoji,pass,pass,,,,
+26,"There should be 2 menu on top corner of the comment pop up
+1.Emoji
+2.Resolved icon
+3.3 Dots Icon",pass,pass,,,,
+27,When the user hover on the Emoji there should be a tooltip saying what it does and when the user select any on emoji it will be added as a Reply for the comment,failed,failed,,,,
+28,When the user hover on the Resolved icon The tooltip should be displayed and when the user click on it the Comment should be removed from UI and Comments section,failed,failed,,,,
+29,"When the user click on Meat ball icon the pop up should be displayed with following detailes:
+1.pin comment
+2.Copy link
+3.delete Thread
+4.Edit Comment",pass,pass,,,,
+30,The user should be able to pin the comment If the Comment Is aready pinned then the user should get unpin the comment menu,pass,pass,,,,
+31,When the user click on Copy Link the link should be copyed and if that Url is pasted in New tab that Comment should be opened,pass,pass,,,,
+32,When the user click on Edit Button the user should be able to edit the comments which is already added,pass,pass,,,,
+33,When the user click on Delete thread The complete Comments Should be deleted Along with the comments Added to tha mail Comment,pass,pass,,,,
+34,"Verify the display of Comments Added to the Main Comment Thread
+1.Smilely
+2.3 dot icon",pass,pass,,,,
+35,When the user hover on the Emoji there should be a tooltip saying what it does and when the user select any on emoji it will be added as a Reply for the comment,failed,faailed,,,,
+36,"When the user click on Meat ball icon the pop up should be displayed with following detailes:
+1.delete Comment
+2.Edit Comment",pass,pass,,,,
+37,When the user click on Delete comment Button only that particular Comment Should be deleted,pass,pass,,,,
+38,When the user click on the edit Comment ICon the user should be able to edit only the Selected comment,pass,pass,,,,
+39,When the user add the comment each comment should have a ID Associated to it the ID start from 1 to no of comments added(The Thread Comments should not have ID),pass,pass,,,,
+40,"In Comment Section following detailes should be displayed
+a.All the pined comment sshould be diplayed from latest to oldest then folled by other comments latest to oldest
+b.Filter ICon",failed,,,,,
+41,All the pined comments should be highlightes in Mild Yellow color and rest comment should be displayed white the pined comment should dipslayed newest to oldest order then the other comments  should display newest to oldest,failed,pass,,,,
+42,"each Comments should be displayed with following detailes:
+1.Comment ID
+2.User Name
+3.Comment
+4.Timestamp
+5.If there is any Replies are reaction that need to displayed (For replies Show count)
+6.Pined by username (Optionla only if the user had pinged any comments)",pass,pass,,,,
+43,"When the user Hover on the comment following detailes should display:
+1.Emoji
+2.resolved icon
+3.3 line menu",pass,pass,,,,
+44,When the user hover on the Emoji there should be a tooltip saying what it does and when the user select any on emoji it will be added as a Reply for the comment,failed,failed,,,,
+45,When the user hover on the Resolved icon The tooltip should be displayed and when the user click on it the Comment should be removed from UI and Comments section,failed,failed,,,,
+46,"When the user click on Meat ball icon the pop up should be displayed with following detailes:
+1.pin comment
+2.Copy link
+3.delete Thread
+4.Edit Comment",pass,pass,,,,
+47,The user should be able to pin the comment If the Comment Is aready pinned then the user should get unpin the comment menu,pass,pass,,,,
+48,When the user click on Copy Link the link should be copyed and if that Url is pasted in New tab that Comment should be opened,pass,pass,,,,
+49,"When the user click on Edit Button the user should be able to edit the comments which is already added
+following button should display:
+1.Cancel
+2.Post",pass,pass,,,,
+50,When the user click on Delete thread The complete Comments Should be deleted Along with the comments Added to tha mail Comment,pass,pass,,,,
+51,When the user click on cancel button the pop up should be closed,pass,pass,,,,
+52,If the user try to empty the already present comment then the post should be disabled,pass,pass,,,,
+53,when the user click on the post button the comment should get added in the commenta pane and the pop up should be closed,pass,pass,,,,
+54,"When mutliple developers are building the application if the Dev 1 want some changes in the feature built by dev 2 so now the Dev1 can add the comments that should be reflected to Dev2 immeditely this Comments include(edit/pin/delete/add comment, on adding a reaction)",pass,pass,,,,
+55,The Dev2 Should should be able to Add the reply to the comment added by Dev 1,pass,pass,,,,
+56,If the 5 developer are editing/Viewing the application then the developers name should be displyed,Not developed it,,,,,
+57,"when the user click on filter icon in Comments section following detailes should be displayed:
+a.Show all comments(By default Selected)
+b.Show only pined
+c.Show only yours
+d.Show resolved comments",pass,pass,,,,
+58,The show all comments filter will be selected by default so all the comments should be displayed by default,pass,pass,,,,
+59,when the user select show only pined filter the comments which are pined should be displayed latest to oldest,failed,pass,,,,
+60,When the user Select show only yours filter then the comments which we logged in by that user should be shown,pass,pass,,,,
+61,"When the user select only ""Select resolved Comments"" Filter only the the resolved comments should be displayed",failed,pass,,,,
+62,When the comments are added in the canvas the user should be to drag and drop the comments wherever they want,failed,failed,,,,
+63,When there is resolved and unresolved comments there should be difference displayed on the canvas,failed,failed,,,,
+64,The bell icon should be displayed in the application page and the count of notification should be displayed on the bell icon ,pass,pass,,,,
+65,when the user click on bell icon all the notification should be present in the section ,pass,pass,,,,
+66,"There should be handle icon of user , username and left a comment on application name this should be format of the notification should display",pass,pass,c2dev,c3viewer,,
+67,The notification will be recived only if the user is tagged in the thread,pass,pass,tagged in commentid1,tagged in commentid2,,
+68,When user click on mark as read button all the notification count should be null ,pass,pass,,,,
+69,when user click on any notification the user should be navigated to that thread,pass,pass,,,,
+70,if the notification is deleted then show an error,failed,fixed,,,,
+71,if the application is deleted then how the notification is displayed,pass,failed,,,,
+72,"The email should be sent for adding a new comment, Replying to a comment and if the user is mentioned in the comment ",failed,pass,,,,
+73,there should be red dot displayed on the comment icon with tooltip unread messages when there are new messages to the users,failed,,,,,
+74,If the admin tag the Developer or a viwer the email should be sent to both of there and the notification should be displayed in the bell icon,pass,pass,,,,
+75,There should not be any notification/email if the Admin has started a new thread and not tagged any one ,pass,pass,,,,
+76,If the admin delete the comment thread then it should be deleted to dev and viewer,pass,pass,,,,
+77,if the user tag the dev the email and notifiaction should be sent to dev and there should not be any notification to viwer but the comment should be displayed,pass,pass,,,,
+78,The viewer should only be able to tag the users and check the comments ,pass,pass,,,,
+79,when the admin share the application with new Admin all the old comment sshould be retained,pass,pass,,c4admin,c5dev,c6viewer
+80,when the admin share the application with new dev all the old comment sshould be retained,pass,pass,,,,
+81,when the admin share the application with new viewer all the old comment sshould be retained,pass,pass,,,,
+82,when the dev share the application with new dev all the old comment sshould be retained,pass,pass,,c7viewer,c8dev,
+83,when the dev share the application with new viewer all the old comment sshould be retained,pass,pass,,,,
+84,when the viewer share the application with new viewer all the old comment sshould be retained,pass,pass,,c9viewer,,
+85,when viewer share a application with viwer and the admin tag a new viewer in the Comment thread then that viwer should get notification/email and the comment should be displayed on UI,pass,pass,,,,
+86,when viewer share a application with viwer and the devloper tag a new viewer in the Comment thread then that viwer should get notification/email and the comment should be displayed on UI,pass,pass,,,,
+87,when viewer share a application with viwer and the viewer tag a new viewer in the Comment thread then that viwer should get notification/email and the comment should be displayed on UI,pass,pass,,,,
+88,The user who had started the comment thread only he should have access to delete the thread,pass,pass,,,,
+89,When there are 10 comments before if the new user got tagged now then he should be able to see the old comments,pass,pass,,,,
+90,if the admin chnage the user roles the Comment shsould be reatined ,pass,pass,,,,
+91,When the user1 add the comment it should be sent to inmediatly to User 2,,pass,,,,
+92,when the user 1 edit the comment the same time user 2 should be able to see it,,pass,,,,

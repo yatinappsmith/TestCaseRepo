@@ -1,0 +1,216 @@
+Title
+The user should be able to set up the SSO from admin setting page
+"Under the authentication tab The user should be displayed with following detailes
+1.Select Authentication Method  text
+2.Select a protocol you want to authenticate users with text
+3.OIDC logo followed by OIDC Enterprise text
+4.Enable your organization to sign in with Open ID Connect Text
+5.SAML Logo followed by SAML2.0 Enterprise text
+6.Enable your organization to sign in with your preferred SAML2 compliant provider text
+5.Google icon followed by Google Text
+6.Enable your organization to sign in with Google (OAuth) text
+7.Github icon followed by GIthub text
+8.Enable your organization to sign in with Github SAML single sign-on (SSO) text
+7.Form login icon followed by Form login text
+8.Enable your organization to sign in with Appsmith Form text"
+The Authentication Page will be displayed differenlty based on the Appsmith CE and EE repo
+"In the Appsmith CE version The Google, Github and form login protocol should be displayed with the enable button"
+In the Appsmith CE version the OIDC and SAMLprotocal should be displayed with the Upgrade Button
+When the user click on the upgrade button the intercom chat should be opened with a message for a upgrade
+"In the Appsmith EE version google,github,formlogin,OIDC,SAML all the protocal shoul be displayed with the enable button"
+"When user clicks on Form login Enable button the user should be navigated to Form Login Page and the following detailes should be displayed:
+1.Form Login text
+2.Enable your organization to sign in with Appsmith Form Text
+3.Form Login Option Toggle 
+4.Signup Toggle
+5.Save & Restart button
+6.Reset button"
+"When the user enable the form login option the toggle should get enabled and text should be displayed in front of the toggle as ""Enable form login/signup"""
+"When the user disable the form login option the toggle should be disabled and text should be displayed in front of the toggle as ""Disable form login/signup"""
+When the user diabled the form login option the form login should be disabled for all the users  to check this signout from the application and try to signin back now the form login should be disabled 
+When the user enable the form login the form login should be enabled for all the users to check this signout from the application now the form login should be displaayed
+"when the Admin enable the signup toggle the toggle should enabled and the following text should be displayed""Allow invited users to signup"""
+"when the Admin disable the signup toggle the toggle should disabled and the following text should be displayed""Allow all users to signup"""
+When admin enable the signup toggle only the invited users for the application should be able to login 
+When admin disable the signup toggle all the users should be able to login
+By Default both form login option toggle and signup toggle should be in diabled state 
+when user enable any toggle and the changes should be applied then User should click on Save and restart button 
+When the user add the data and click on save chnages button the data should be saved 
+"When user clicks on Github Enable button the user should be navigated to Github Authentication Page and the following detailes should be displayed:
+1.Github Authentication text
+2.Enable your organization to sign in with Github SAML single sign-on (SSO).
+3.How to configue read more link
+4.Client ID Placeholder
+5.Client Secret Placeholder
+6.Save & Restart button
+7.Reset button"
+When the user add a client id and client secret And click on save button the data should be saved and server should restart 
+If the Added data is correct then the server would restart successfully if its successfull then signout and login with the Github SSO
+If the added detailes are not correct then the server restart will fail 
+"When user click on Save & Restart the modal should be displayed with following detailes 
+Restarting Server
+We will notify you once we are done!"
+"When the added detailes is wrong and if the user clicks on Save & Restart the modal should be displayed with following detailes:
+Restart failed
+Something went wrong. Please contact your administrator."
+When the user add the data and click on save chnages button the data should be saved 
+"The functionality of the reset button
+1.When the user do nay changes and click on RESET the data should be revered to previous changes
+2.The Reset should be disabled when there is not new data added"
+When user add any protocol and comes back to Authentication page the enable should be chnaged to edit button 
+The edit button should displayed in Orange color
+When the user clicks on the edit button the user should be navigated to Git hub authentication page
+When the Protocal is added successfully the Green tick mark should be added next to the protocal name
+When user clicks on Learn more link the user should be navigated to appsmith Docs page the docs page should cotain doccs related to github authentication setup
+"When user clicks on Google Enable button the user should be navigated to google Authentication Page and the following detailes should be displayed:
+1.Google Authentication text
+2.Enable your organization to sign in with Google (OAuth) text
+3.How to configue read more link
+4.Client ID Placeholder
+5.Client Secret Placeholder
+6.Allowed Domain
+7.Save & Restart button
+8.Reset button"
+"When the user add a client id , client secret and allowed domain and click on save button the data should be saved and server should restart "
+When the user add a client id and client secret And click on save button the data should be saved and server should restart 
+If the Added data is correct then the server would restart successfully if its successfull then signout and login with the Github SSO
+If the added detailes are not correct then the server restart will fail 
+"When user click on Save & Restart the modal should be displayed with following detailes 
+Restarting Server
+We will notify you once we are done!"
+"When the added detailes is wrong and if the user clicks on Save & Restart the modal should be displayed with following detailes:
+Restart failed
+Something went wrong. Please contact your administrator."
+When the user add the data and click on save chnages button the data should be saved 
+"The functionality of the reset button
+1.When the user do nay changes and click on RESET the data should be revered to previous changes
+2.The Reset should be disabled when there is not new data added"
+When user add any protocol and comes back to Authentication page the enable should be chnaged to edit button 
+The edit button should displayed in Orange color
+When the user clicks on the edit button the user should be navigated to google  authentication page
+When the Protocal is added successfully the Green tick mark should be added next to the protocal name
+When user clicks on Learn more link the user should be navigated to appsmith Docs page the docs page should cotain doccs related to github authentication setup
+"When user clicks on OIDC Enable button the user should be navigated to OpenID Connect Page and the following detailes should be displayed:
+1.OIDC Open Connect text
+2.Enable your organization to sign in with Open ID Connect text
+3.How to configue read more link
+4.Redirect URL header
+a.URL Placeholder
+b.Client ID placeholder
+c.Client Secret placeholder
+d.Authorization URL placeholder
+e..Token URL Placeholder
+f.User Info URL Placeholder
+g.JWK Set URL Placeholder
+5.Advanced section
+a.Scope Placeholder
+b.Username attribute Placeholder
+7.Save & Restart button
+8.Reset button"
+The URL input box is an autogenerated section where the user has a Autogenertaed redirect URL along with the copy icon
+When user clicks on the copy icon the animation should be same as in the github feature
+The user should be able to copy the text anywhere required
+The text * Paste this URL in your IdP service providers console. should be displayed below the URL input box
+The user should be able to Add the client Id in the client ID input box 
+The user should be able to Add the client Secret in the client Secret input box 
+The user should be able to Add the  Authorization URL in the Authorization URL input box 
+The user should be able to Add the Token URL in the Token URL input box 
+The user should be able to Add the User Info URL in the User Info URL input box 
+The user should be able to Add the JWK Set URL in the JWK Set URL input box 
+The user should be able to addthe scopes in the scope section
+The user should be able to add username Attribute in the username attribute section
+Once the user add all the detailes and click on Save and restart button 
+If the Added data is correct then the server would restart successfully if its successfull 
+If the added detailes are not correct then the user cant login
+"When user click on Save & Restart the modal should be displayed with following detailes 
+Restarting Server
+We will notify you once we are done!"
+"When the added detailes is wrong and if the user clicks on Save & Restart the modal should be displayed with following detailes:
+Restart failed
+Something went wrong. Please contact your administrator."
+When the user add the data and click on save chnages button the data should be saved 
+"The functionality of the reset button
+1.When the user do nay changes and click on RESET the data should be revered to previous changes
+2.The Reset should be disabled when there is not new data added"
+When user add any protocol and comes back to Authentication page the enable should be chnaged to edit button 
+When the restart is successfull the page is added with the new section called danger zone
+"The Danger Zone should be displayed with following detailes:
+1.Changes to this section can disrupt user authentication. Proceed with caution.text in red color
+2.OpenID Connect will be removed as primary method of authentication text in red color
+3.Disconnect button in red color "
+When user clicks on disconnect button there should be a confirmation pop up for confirmation on delete
+When the user disconnect the The sso connection should be disconnected
+All the Input fields should be empty once its disconnected and the enable button should be displayed in front of the Protocol the green tick mark should be removed 
+When the user add all the Detailes the detailes should be saved in the docker.env file all the added details should be saved in the varible in env file
+When user disconnect or delete the input detailes the empty varible should be displayed in the Docker.env file
+The user finds all the Input criteria from the IDP that the user will be using
+"When user clicks on SAML Enable button the user should be navigated to SAML Page and the following detailes should be displayed:
+1.SAML 2.0 text
+2.Enable your organization to sign in with your preferred SAML2 compliant provider like Ping Identity, Google SAML, Keycloak, or VMware Identity Manager. text
+3.How to configue read more link
+4.Redirect URL header
+a.URL Placeholder
+1.Register Identity Provider text
+2.Metadata URL tab
+3.XML Tab
+4.Idp data tab
+5.The input text box
+6.Fetch Metadata Button
+7.Save & Restart button
+8.Reset button"
+The user should enter the metedata URL In the Place holder and click on Fetch MetaData button 
+The user can obtain the metedata from the IDP provider
+When user has to extract the XML file from the metadata URL
+Once the user enter the correct metedata file and click on fetch meta data the user should be navigated to map identitiy provider page
+"The Map Identitiy provider page should be displayed as follows:
+1.Map Identity Provider Attributes text
+2.Configure the mapping of IdP attribute keys. Consult your Identity Provider's documentation  for the appropriate keys. text
+3.Get started with Single Sign-on for your organization by selecting a provider. Read more in our documentation. link
+4.IdP User Id input box
+5.User Email Input box
+6.First name input box
+7.Last name Input Box
+8.Save data Button"
+The user should able to Add The Used ID from the Downloaded XMl file to the Input Box
+The user should able to Add The EmailID from the Downloaded XMl file to the Input Box
+The user should able to Add The Firstname from the Downloaded XMl file to the Input Box
+The user should able to Add The Lastname from the Downloaded XMl file to the Input Box
+If the Added data is correct then the server would restart successfully if its successfull 
+If the added detailes are not correct then the server restart will fail 
+"When user click on Save & Restart the modal should be displayed with following detailes 
+Restarting Server
+We will notify you once we are done!"
+"When the added detailes is wrong and if the user clicks on Save & Restart the modal should be displayed with following detailes:
+Restart failed
+Something went wrong. Please contact your administrator."
+When the user add the data and click on save chnages button the data should be saved 
+"The functionality of the reset button
+1.When the user do nay changes and click on RESET the data should be revered to previous changes
+2.The Reset should be disabled when there is not new data added"
+When user add any protocol and comes back to Authentication page the enable should be chnaged to edit button 
+When the restart is successfull the page is added with the new section called danger zone
+"The Danger Zone should be displayed with following detailes:
+1.Changes to this section can disrupt user authentication. Proceed with caution.text in red color
+2.OpenID Connect will be removed as primary method of authentication text in red color
+3.Disconnect button in red color "
+When user clicks on disconnect button there should be a confirmation pop up for confirmation on delete
+When the user disconnect the The sso connection should be disconnected
+The user finds all the Input criteria from the IDP that the user will be using
+How to configure Client ID and cllient secret for github
+Login to your git hub account ->Go to setting from user profile->Now Click on Organization 
+Add a new organization ->Now in the same page click on Developer setting->Now click on Oauth Apps
+Click on Register a new app button 
+"Now add a app name,home page url (https://app.appsmith.com),Authorization Callback URL(https://app.appsmith.com/login/oauth2/code/github)"
+Then click on register application
+Once the application is registered we will get a Client ID and secret Key now copy it and paste it in the Admin setting page 
+"How to configure Client ID, cllent secret  and allowed domain for google"
+The user should signup to the google cloud platform 
+From dashboard click on API and services ->click on Oauth consent screen->Create a new 
+"Add Appname, user support email,Authorized email and developer email and save it "
+Now go to Credentials->Click on create credentials->Select Oauthclient id 
+Now sleect the app as web application->add app name
+Add Javascript Origins as https://app.appsmith.com
+Add redirect URI as https://app.appsmith.com/login/oauth2/code/google
+Click on Create now we get a client ID and secret coppy and paste it in the Admin setting page 
+In the allowed domain section add the domain name which the app will support
+How to configure OIDC With different IDP

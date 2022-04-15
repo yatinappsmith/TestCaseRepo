@@ -1,0 +1,5 @@
+TEST TYPE,TEST CASE,EXPECTED RESULT,CURRENT RESULT
+Positive,Clone an app with JS objects bound to widgets and check if JS object bindings can be run without breaking code flow,Cloned app should behave the same as the original app,"Currently, object name is displayed as a lint error"
+Positive,Bind a widget with a JS function which calls an API asynchronously,widget --> JS object --> API call from widget action field is successful,
+Positive,Follow the above steps and add another layer of widget binding to make a chained asynchronous,widget --> widget --> JS object --> API call from widget action field is successful,
+Negative,"Delete a JS object and clone this app/page (Duplicate, fork, import+export)",Cloned app/page should behave the same as the original app/page,"Currently, there are various issues with forking an app with JS objects + cloning a page"

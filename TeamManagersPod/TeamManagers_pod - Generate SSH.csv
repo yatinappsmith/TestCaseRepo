@@ -1,0 +1,49 @@
+Test Case Number,Area of Focus,Type (Negative / Positive),Steps,Expected Result,Actual,Comments,Automated,By Dev/QA,Bugid
+TC-git001,git feature/generate SSH,positive,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Click on meet ball icon in ssh key section
+8.Verify the display of Regenerate SSH Key",when user click on meat ball icon the regenrate SSH Key menu should be displayed,when user click on meat ball icon the regenrate SSH Key menu should be displayed,,,,
+TC-git002,git feature/generate SSH,positive,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Click on meet ball icon in ssh key section
+8.Verify the functionlaity when user click on Regenerate SSH Key","when user click on regenerate ssh key the pop up should be displayed with following detailes:
+This might cause the application to break. This keys needs to be updated in your Git Repo too! text followed by a button 
+Are you sure ?
+1.yes","when user click on regenerate ssh key the pop up should be displayed with following detailes:
+This might cause the application to break. This keys needs to be updated in your Git Repo too! text followed by a button 
+Are you sure ?
+1.yes",,,,
+TC-git003,git feature/generate SSH,positive,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Click on meet ball icon in ssh key section
+8.Verify the functionlaity when user click on yes CTA ",The new SSH key should be generated,The new SSH key will be generated,,,,
+TC-git004,git feature/generate SSH,positive,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Click on meet ball icon in ssh key section
+8.Generate a new SSH Key
+8.Validate the addition of New SSH on Git ",when user add the newly generated ssh key in the Git the app should work as before without any error,when user add the newly generated ssh key in the Git the app works as before without any error,,,,
+TC-git005,git feature/generate SSH,negative,"1.Go to canvas
+2.Click on Connect git button 
+3.Inside the Git connection popup
+4.Enter th ekey in Input box
+5.Click on generate Key button
+6.Under git connection pop up
+7.Click on meet ball icon in ssh key section
+8.Generate a new SSH Key
+8.Validate if the we dont add of New SSH on Git ",when the user doesnt add the newly generated key in git the Error should be displayed,issue added,,,,

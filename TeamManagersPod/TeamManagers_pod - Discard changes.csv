@@ -1,0 +1,160 @@
+Test Case Number,Area of Focus,Type (Negative / Positive),Steps,Expected Result,Actual,Comments,Automated,By Dev/QA
+TC-git001,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4.Before doing a intial commit and push click on Discard change button",The discard chnage should not be enabled before the first commit and push,The discard chnages button is enabled before the first commit and push,,,
+TC-git002,git feature/discard changes,negative,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4.Verify the display of discard button if there is no chnages made in the application after the last commit",1.The discard button should not be displayed ,The discard button should not be displayed ,,,
+TC-git003,git feature/discard changes,negative,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4.Verify the display of discard button if there are client side migration changes",The discard button will be displayed but when user clicks on it the discard functionlity will not be performed,Cant be tested on DP,,,
+TC-git004,git feature/discard changes,negative,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4.Verify the display of discard button if there are server side migration changes",The discard button will be displayed all the changes will be auto commeted from back end ,Cant be tested on DP,,,
+TC-git005,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4.do a intial commit and push
+5 mow add a new page
+6.The display of Discard button",the discard button should be displayed with orange color with a bold letter and it should be displayed next to commit and push button under deploy tab,the discard button should be displayed with orange color with a bold letter and it should be displayed next to commit and push button under deploy tab,,,
+TC-git006,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4. do a intial commit and push
+5 now add a new page
+6.verify Functionality of dicard button","When the user click on discard change button the second time verifcation should be displayed as ""ARE YOU SURE"" If the user click on Button the new chnages should be discared and the last commit chnages will be pulled and displayed on the UI","When the user click on discard change button the second time verifcation should be displayed as ""ARE YOU SURE"" If the user click on Button the new chnages should be discared and the last commit chnages will be pulled and displayed on the UI",,,
+TC-git007,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4. do a intial commit and push
+5 now add a new page
+6.verify error display when user try to discard the chnage","""Discarding these changes will pull previous changes from Git.with learn more link"" should be displayed ","""Discarding these changes will pull previous changes from Git.with learn more link"" should be displayed ",,,
+TC-git008,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4. do a intial commit and push
+5 now add a new page
+6.click on discard change
+7.verify the functionality of learn more link",When the user click on learn more link the user should be navigated to the discard chnages docs,not yet linked,,,
+TC-git009,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4. do a intial commit and push
+5 now add a new page
+6.verify the functionality of discard button","1. Its a branch level discard 
+2. When we do a discard change the application will go back to previous commit all the chnages made from previos commit to the time of disacrd will be erased",seems fine,,,
+TC-git010,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4. do a intial commit and push
+5. Add a new page
+6 discard the changes
+7. check the Latest deploy preview",The latest deploy preview should have last deployed version,seems fine,,,
+TC-git011,git feature/discard changes,positive,"1.Create a new app
+2.Create a crud page
+3.Now connect application to git 
+4. do a intial commit and push
+5. Add a new page
+6 discard the changes
+7.verify the functionality of discard button at branch level",when user is in child branch discard the newly added change and merge it to master the discarded chnages should not reflect in the master ,seems fine,,,
+TC-git012,git feature/discard changes,positive,"1.Go to an old git connect application
+2. Now see there are some uncommited changes
+3.These changes may be by user or by migration 
+4.Now click on Discard changes
+5.verify the functionlaity",All the new chnages should be gone and the previous commit of the app should be displayed,Not able to test in DP,,,
+TC-git013,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a table widget 
+6. Do a commit and push 
+7. Now add a list widget 
+8.Now we dont need a newly added list widget
+9.Click on discard change and verify the functionlity",The list widget should be removed and the user should go back to previous commit that only table should be displayed,seems fine,,,
+TC-git014,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. connect to a mongo dB 
+6. Do a commit and push 
+7. Now add a postgre DB 
+8.Now we dont need a newly added Postgre DB
+9.Click on discard change and verify the functionlity",The Postgre DB should be removed and user should go back to previos commit that only mongo db should be displayed,this level it doesnt work,,,
+TC-git015,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. connect to a mongo dB  add query 1
+6. Do a commit and push 
+7. Now add a postgre DB  add query 1
+8.Now we dont need a newly added postgre DB query 1
+9.Click on discard change and verify the functionlity",The Postgre DB should be removed along with query 1 and user should go back to previos commit that only mongo db and query 1should be displayed,seems fine,,,
+TC-git016,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. connect to a mongo dB 
+6. Do a commit and push 
+7. Now add a query 2
+8.Now we dont need a newly query 2
+9.Click on discard change and verify the functionlity",The query 2 should be removed and user should go back to previous commit that mongo db with query 1 should be displayed,seems fine,,,
+TC-git017,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a new API /Curl
+6. Do a commit and push 
+7. Now add a API1/Curl1
+8.Now we dont need a newly added API1/CURL1
+9.Click on discard change and verify the functionlity",The API1/Curl1 should be removed and user should go back to previous commit that API/Curl should be displayed,seems fine,,,
+TC-git018,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a widget table
+6. Do a commit and push 
+7. Now add js
+8.Now we dont need a newly added js
+9.Click on discard change and verify the functionlity",The js should be removed and user should go back to previous commit that table should be displayed,seems fine some toast error is displayed,,,
+TC-git019,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a widget table
+6. Do a commit and push 
+7. Now add js
+8.Now we dont need a newly added js
+9.Click on discard change 
+10.Now fork the application verify the functionality",The discarded changes should not be reflected in the forked app,seemsfine,,,
+TC-git020,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a widget table
+6. Do a commit and push 
+7. Now add js
+8.Now we dont need a newly added js
+9.Click on discard change 
+10.Now duplicate the application verify the functionality",The discarded changes should not be reflected in the duplicated app,seemsfine,,,
+TC-git021,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a widget table
+6. Do a commit and push 
+7. Now add js
+8.Now we dont need a newly added js
+9.Inmport the Json app verify the functionality",In the imported json app the discarded changes should not be displayed,seemsfine,,,
+TC-git022,git feature/discard changes,positive,"1.Create a new app
+2.Now connect application to git 
+3. do a intial commit and push
+4. In the page 1
+5. Add a widget table
+6. Do a commit and push 
+7. Now add js
+8.Now we dont need a newly added js
+9.Inmport the git connected app verify the functionality",In the imported git app the discarded changes should not be displayed,seemdfine,,,

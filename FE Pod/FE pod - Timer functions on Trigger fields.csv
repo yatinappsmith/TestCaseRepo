@@ -1,0 +1,2 @@
+Test case,Test case type,Result
+Check if timer functions setInterval and clearInterval are supported on trigger fields of all supported widgets,Positive,

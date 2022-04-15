@@ -1,0 +1,12 @@
+Sl No ,Title (Feature +test Ideas ),Steps,Expected Behaviour ,Labels (Tab Name) 
+1,UQI,Import an appliation to ensure that all the datasource are working as expected ,,
+2,,Fork an application to ensure that all the datasource are working as expected ,,
+3,,Duplicate an application  to ensure that all the datasource are working as expected ,,
+4,,Share an application to ensure that the datsources are working well ,,
+5,,Create a new application and ensure that all are working well ,,
+6,,Create an application using CRUD for the Datasources and ensur it is working well ,,
+7,,Create an application that has query interlinked to eachother ,,
+8,,Run an older query and observe the response on the dev tools ,,
+9,,Ensure the data is being passed appropriately ,,
+10,,Delete an application that been imported ,,
+11,,Check for possible dropdowns and conversion of them ,,

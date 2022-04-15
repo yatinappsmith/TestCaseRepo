@@ -1,0 +1,126 @@
+Admin page setting ,
+The Admin setting page is Displayed only to the user who is the Admin ,pass
+When the user install his fresh local instance then that user will be permitted with the admin access,pass
+When the user click on Usericon the Admin setting menu should be displayed under edit profile menu,pass
+"When the user click on the Admin settings, the user should be navigated to general Setting page By Default",pass
+"The general setting page should be displayed with following details 
+1.The left pane with the menu items to swicth between the pages
+2.the general setting page should have following details:
+a.Back button
+b.General Settings text
+c.Instance Name Input box
+d.The input box should have a placeholder text as ""appsmith/prod""
+e.Admin Email input box
+f.The input box should have a placeholder text as ""eg email""
+g. Emails of the users who can modify instance settings (Comma Separated) text below input box
+h.Share Anonymous Usage Data text
+i.Toggle button
+j.Share anonymous usage data to help improve the product text
+k.Save chnages button
+l.clear button button",pass
+"The left pane should be displayed with following menus:
+1.General
+2.Advanced
+3.Authentication
+4.Email
+5.Google Maps
+6.Version",pass
+The user should be able to enter any character inside the Instance Name Input box,pass
+The user should be able to enter the email insid ethe Admin email input box,pass
+"The user enter the invalid email id Check for the following scenarios
+1.The email Textbox should not allow only username is given
+2.There should be a invalid domain name
+3.Give only spaces in Email placeholder
+4.Dont enter any Email 
+5.Enter the invalid email ID
+When there is an invalid email ID the error message should be displayed as""Please provide a valid email address""",pass
+The save changes button should be disabled until the user enter the data in input field,pass
+When the user add the data and click on save chnages button the data should be saved ,pass
+When the user click on back link the user should be navigated to home page,pass
+"The toggle should be enabled by default when its enambled the text should be displayed next to it as ""Share data & make appsmith better!""",as of now no enable
+"when the user disable the the toggle the text should be displayed next to it as ""Don't share any data""",pass
+"The functionality of the reset button
+1.When the user add any data in the input box and click on clear the data should be revered to previous saved data
+2.The clear should be disabled when there is not new data added",pass
+"The Advance setting page should be displayed with following :
+1.Back link
+2.Advanced Settings text
+3.MongoDB URI Input box
+4.* Appsmith internally uses mongo DB. Change to an external MongoDb for Clustering text
+5.Redis URL input box
+6.Appsmith internally uses redis for session storage. Change this to an external redis for Clustering text
+7.Save changes button 
+8.clear button",pass
+The MongoDB URI and Redis URL will be prefiled the user change to there URLs,pass
+When the user add the data and click on save chnages button the data should be saved ,pass
+"The functionality of the reset button
+1.When the user add any data in the input box and click on clear the data should be revered to previous saved data
+2.The clear should be disabled when there is not new data added",pass
+"The Authentication Settings page should be displayed with following :
+1.Back link
+2.Form Signup text
+3.Allow signup toggle
+4.Google Signup text
+5.How to configure? READ MORE  link
+6.Client ID input box
+7.Allowed Domains input box
+8.Client Secret input box
+9.Github Signup text
+10.How to configure? READ MORE  link
+11.Save changes button 
+12.clear button",pass
+When the user click on back link the user should be navigated to home page,pass
+"The Allow signup toggle should be enabled by default and the text should be displayed as ""Allow all users to signup""
+If the allow sign up toggle is disbaled then the text should be displayed as ""Allow invited users to signup",As of now noone of the toggle are enabled by default as we dont have a connection 
+When the user click on How to configure? READ MORE link under Google Signup text the user should be navigated to Google auth docs,pass
+the user should be able to enter the Client ID under clint id Input box There should be a eg placeholder displayed inside the input box,pass
+the user should be able to enter the Domain names under Allowed Domains Input box There should be a eg placeholder displayed inside the input box,pass
+the user should be able to enter the Client Secret key under Client Secret Input box There should be a eg placeholder displayed inside the input box,pass
+When the user click on How to configure? READ MORE link under Github Signup text the user should be navigated to github auth docs,pass
+the user should be able to enter the Client ID under clint id Input box There should be a eg placeholder displayed inside the input box,pass
+When the user add the data and click on save chnages button the data should be saved ,pass
+"The Email Settings page should be displayed with following :
+1.Back link
+2.SMTP Host Input box
+3.SMTP Port input box
+4.From Address input box
+5.You will need to verify your from email address to begin sending emails text
+6.TLS Protected Connection toggle
+7.Save changes button 
+8.clear button",pass
+When the user click on back link the user should be navigated to home page,pass
+"the user should be able to enter the SMTP Host name under SMTP HostInput box There should be a eg placeholder displayed inside the input box as ""email-smtp.us-east-2.amazonaws.com""",Placeholder is not doing for this
+"the user should be able to enter the SMTP Port ID under SMTP Port Input box There should be a eg placeholder displayed inside the input box as ""25""",Placeholder is not doing for this
+"the user should be able to enter the From Address under From Address Input box There should be a eg placeholder displayed inside the input box as ""admin@appsmith.com""",Placeholder is not doing for this
+"The TLS Protected Connection toggle should be enabled by default and the text should be displayed as ""Enabled""
+If the allow sign up toggle is disbaled then the text should be displayed as ""Disabled""",pass
+"When the TLS Protected Connection toggle is enabled the SMTP Username, SMTP Password input box should be displayed with default userdata",pass
+When the user add the data and click on save chnages button the data should be saved ,pass
+"The Goggle mapa Settings page should be displayed with following :
+1.Back link
+2.How to configure? READ MORE  link
+3.SGoogle Maps API Key input box
+4.Save changes button 
+5.clear button",pass
+When the user click on back link the user should be navigated to home page,pass
+When the user click on How to configure? READ MORE link  the user should be navigated to Google maps docs,pass
+"the user should be able to enter the Google APi in Address Input box There should be a eg placeholder displayed inside the input box as ""xxx""",Not done for now
+When the user add the data and click on save chnages button the data should be saved ,pass
+"The functionality of the Reset button
+1.When the user add any data in the input box and click on clear the data should be revered to previous saved data
+2.The clear should be disabled when there is not new data added",pass
+"The Version Settings page should be displayed with following :
+1.Back link
+2.Current version 
+3.How to configure? READ MORE  link",pass
+Under currrent version the version of the appsmith should be displayed,pass
+when user clikc on read more link the user should be navigated to doc,pass
+Whenever the user chnage any data and click on save button the server should restart,pass
+"When the server is restarting the pop should be displayed as "" restarting the server please wait for some time "" and he is not allowed to do any chnages",pass
+Suppose the user is doing his first time local set  up then the Welcome page along with the form should be displayed,pass
+If the user has done his local set up and if he is inviting the Users to his app then the only welcome page should not be displayed,pass
+If the new user signup from the cloud instance then the welcome page should be displayed with only 2 dropdwon selection option,pass
+Suppose the app has been shared with the new user then the welcome page should not be displayed when the new user sign up,pass
+If the user has already signed up then the new application has been shared then the welcome page should not display,pass
+Suppose the app app is made public now the new user signup then the welcome page should be displayed ,pass
+if the app is made public and then shared with the user then the welcome page should not be displayed,pass

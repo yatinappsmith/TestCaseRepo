@@ -1,0 +1,202 @@
+Module Name,STEPS,VERIFIED
+Open a Modal and run a query on button click,"1. Go to the property pane of button widget and click on `js` of ""onClick"" Action
+2. Type `/` in the text area of ""onClick"" 
+3. Choose the insert snipper , a menu will be shown 
+4. Select the ""Open a Modal and run a query on button click""
+5. Snippet will automatically be copied in text area
+6. Change the model name and Query values. and then click on the submilt button.
+7. Modal was opened",TRUE
+Configuring multiple actions on button click,"1. Go to the property pane of button widget and click on `js` of ""onClick"" Action
+2. Type `/` in the text area of ""onClick"" 
+3. Choose the insert snipper , a menu will be shown 
+4. Choose the ""Configuring multiple actions on button click"".
+5. Snippet will automatically be copied in text area of ""onClick""
+6. Change the query name,success message ,Query data ,pageName, and the store value 
+7. Open the property pane of text widget and in text area of the text widget write the {{appsmith.store.Key}}.
+8. Success message was shown, Value was storing in text widget and it was navigating to other page",TRUE
+Running multiple queries in series,"1. Go to the property pane of button widget and click on `js` of ""onClick"" Action
+2. Type `/` in the text area of ""onClick"" 
+3. Choose the insert snipper , a menu will be shown 
+4. Select the ""Running multiple queries in series""
+5. Snippet will automatically be copied in text area of ""onClick""
+6. Change the name of Query.and also show alert inside the queries
+7. Queries were running and success message was shown",TRUE
+Running multiple queries in Parallel,"1. Go to the property pane of button widget and click on `js` of ""onClick"" Action
+2. Type `/` in the text area of ""onClick"" 
+3. Choose the insert snipper , a menu will be shown 
+4. Select the ""Running multiple queries in parallel""
+5. Snippet will automatically be copied in text area of ""onClick""
+6. Change the name of Query.and also show alert inside the queries
+7. Queries were running and success message was shown",TRUE
+Binding current time in the text widget,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Choose the ""Binding current time in the text widget""
+6. Snippet will automatically be copied in text area of ""text""
+7. Current time was shown in the text widget.",TRUE
+Bind a variable dynamically on the text widget,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Choose the ""Bind a variable dynamically on the text widget""
+6. Snippet will automatically be copied in text area of ""text""
+7. Change the value of `your_text`.
+8. Variable value was shown in the text widget",TRUE
+Ordering table data in descending order,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Go to the ""Ordering table data in descending order""
+6. Copy the snippet
+7. Go to datasource and click on create new query
+8. Choose the select command for the query.
+9. Paste the value of Snippet and change the column and table name 
+10. Run the qurey 
+11. Success message was shown",TRUE
+Query data from postures table,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Go to the ""Query data from postures table""
+6. Copy the snippet
+7. Go to datasource and click on create new query
+8. Choose the select command for the query.
+9. Paste the value of Snippet and change the column and table name 
+10. Run the qurey 
+11. Success message was shown",TRUE
+PostgreSQL SELECT statement to query data from one column,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Go to the ""PostgreSQL SELECT statement to query data from one column""
+6. Copy the snippet
+7. Go to datasource and click on create new query
+8. Choose the select command for the query.
+9. Paste the value of Snippet and change the column and table name 
+10. Run the qurey 
+11. Success message was shown",TRUE
+Ordering table data in ascending order,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Go to the ""Ordering table data in ascending order""
+6. Copy the snippet
+7. Go to datasource and click on create new query
+8. Choose the select command for the query.
+9. Paste the value of Snippet and change the column and table name 
+10. Run the qurey 
+11. Success message was shown",TRUE
+Ordering table data based on the length of column value,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Go to the ""Ordering table data based on the length of column value""
+6. Copy the snippet
+7. Go to datasource and click on create new query
+8. Choose the select command for the query.
+9. Paste the value of Snippet and change the column and table name 
+10. Run the qurey 
+11. Success message was shown",TRUE
+Display alerts for workflows,"1. Go to the property pane of button widget and click on `js` of ""onClick"" Action
+2. Type `/` in the text area of ""onClick"" 
+3. Choose the insert snipper , a menu will be shown 
+4. Select the ""Display alerts for workflows""
+5. Snippet will automatically be copied in text area
+6. Change the value of Query ,success message ,key ,querydata and pagenumber. 
+7. Change the Select Option.
+8. Messages were shown in the toast.",TRUE
+PostgreSQL SELECT statement to query data from multiple columns,"1. Go to the property pane of text widget, 
+2. Type / in the text area 
+3. Menu will be shown 
+4. Select the insert snipper 
+5. Go to the ""PostgreSQL SELECT statement to query data from multiple columns""
+6. Copy the snippet
+7. Go to datasource and click on create new query
+8. Choose the select command for the query.
+9. Paste the value of Snippet and change the column and table name 
+10. Run the qurey 
+11. Success message was shown",TRUE
+"Run an Api, Close Model and show alert","1. Go to Datasource
+2. Navigate to ""create new"" page
+3. Click on create new API
+4. Add api and run api. 
+5. Go to the property pane of button widget 
+6. Click on ""JS"" button of ""onClick""
+7. Type `/` in the text of ""onClick"" 
+8. Select the insert snippet 
+9. Chose the ""Run an Api, Close Model and show alert""
+10. Snippet will automatically be copied in the text area of ""onClick""
+11. Change the value of Query ,model and show the message `api.",TRUE
+Updating Queries when options are changed from the select widget,"1. Go to the property pane of dropdown widget and click on `js` of ""onClick"" Action
+2. Type `/` in the text area of ""onClick"" 
+3. Choose the insert snippet , a menu will be shown 
+4. Select the ""Updating Queries when options are changed from the select widget""
+5. Snippet will automatically be copied in text area
+6. Change the dropdown name and Query names and selected option value. 
+7. Show alert inside the queries.
+8. Change the option 
+9. Query was running and alert meassage was shown",TRUE
+Select current data in the date picker widget,"1. Go to the property pane of Datepicker widget and click on ""JS"" button .
+2. Type ""/"" in the text area of ""onDataSelected Action"". 
+3. A menu will be shown 
+4. Click on ""insert snippets"" 
+5. Go to the ""Select current data in the date picker widget"" from the menu and Copy the snippet. 
+6. Go to text area of ""onDataSelected"" and write storevalue function. 
+7. Inside the storevalue function Change the value with snippet. 
+8. Go to text area inside the of text widget and type ""{{appsmith.stor.Key}}"".
+9. Now change the date in date picker widget. 
+10. Time will be changed in the text widget",TRUE
+Formating date inside the data picker widget,"1. Go to the property pane of Table widget and click on `js` of ""onRowSelected"" Action
+2. Type `/` in the text area of ""onRowSelected"" 
+3. Choose the insert snippet , a menu will be shown 
+4. Select the datepicker from the filter
+5. Go to the ""Formating date inside the data picker widget"".
+6. Navigate to Customize.
+7. Provide the input.text for the date and enter format
+8. Run the snippet. Snippet is executed successfully
+9. Copy the snippet.
+10. Write showaAlert method in text area of ""onRowSelected""
+11. Inside ShowAlert method paste the snippet
+12. Select a row 
+13. Success message of date with given format will be shown",TRUE
+Access attributes from a nested data,"1. Go to the property pane of Table widget and Clear the text area of Table data
+2. Clear and then Type `/` in the text area of data
+3. Choose the insert snippet , a menu will be shown 
+5. Go to the ""Access attributes from a nested data""
+6. Navigate to Customize.
+7. Provide the value for your_object and Key
+8. Run the snippet , Snippet will be executed successfully
+9. Copy the snippet.
+10. Paste the snippet in the text area of table data
+11. Table data will be changed accordingly",TRUE
+Filter data based on a particular value when binding data from an array,Filter data based on a particular value when binding data from an array,FALSE
+Add colours to data inside table columns based on certain conditions,"1. Go to the property pane of Table widget and Clear the text area on selected row of Table data
+2. Clear and then Type `/` in the text area of data 
+3. Choose the insert snippet , a menu will be shown
+4.Go to the Add colours to data inside table columns based on certain conditions
+5.Change the column value and column Name
+6.Go to the column section and click on setting button of any column name
+7.Go to the text color JS and pacte the snippet valve here.
+8.",FALSE
+Merge multiple objects from queries into a single array,"1. Go to the property pane of Table widget and Clear the text area of Table data
+2. Clear and then Type `/` in the text area of data
+3. Choose the insert snippet , a menu will be shown 
+5. Go to the ""Merge multiple objects from queries into a single array""
+6. Navigate to Customize.
+7. Provide the value for your_array and objects
+8. Run the snippet , Snippet will be executed successfully
+9. Copy the snippet.
+10. Paste the snippet in the text area of table data
+11. Objects are merged in single array",TRUE
+Parsing through nested JSON data inside an array of objects,Parsing through nested JSON data inside an array of objects,FALSE
+Removing duplicate values from an array,"1. Go to the property pane of Table widget and Clear the text area of Table data
+2. Clear and then Type `/` in the text area of data
+3. Choose the insert snippet , a menu will be shown 
+5. Go to the ""Removing duplicate values from an arrayy""
+6. Navigate to Customize.
+7. Provide the value for your_array
+8. Run the snippet , Snippet will be executed successfully
+9. Copy the snippet.
+10. Paste the snippet in the text area of table data
+11. Duplicate values will be removed",TRUE

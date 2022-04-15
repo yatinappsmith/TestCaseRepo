@@ -1,0 +1,169 @@
+Sl no,Usecases,DP/5513/23Jul,comments,Comments (Sappy)
+1,When the user create a new application title should be “New Page” with 2 options should be displayed on the Canvas,pass,,Pass
+2,"The 2 option should be display in New page ""Build with Drag & Drop"" and ""Generate from a Data Table""",pass,,Pass
+3,"Under ""Build with Drag & Drop"" section the text should be displayed ""Start from scratch and custom create your UI""",pass,,Pass
+4,"Under ""Generate from a Data Table"" section the text should be displayed ""Start with a simple CRUD UI and customise it""",pass,,Pass
+5,"When the user click on ""Build with Drag & Drop"" the user should be navigated to Blank Canavas",pass,,Pass
+6,"When the user click on ""Generate from a Data Table"" the user should be navigated to “Quick Page Wizard” page",pass,,Pass
+7,"The Quick page wizard should be displayed with with a subtitle ""Auto create a simple CRUD interface on top of your data""",pass,,Pass
+8,The Quick page wizard page should be have a select dropdown,pass,,Pass
+9,The select dropdown should be displayed with Connect Datasources button follwed by all the datasources name which the users had previously connected to followed by all the mock data sources name,failed(The mock datasources name isnot displayed,,Pass
+10,when the user click on create on connect new data sources button the user should be navigated to  datasources page from there user can connect to any data sources,pass,As of now supported Mysql and Mongo DB,Pass
+,Once the user connect to the new datasources which is supported for table creation the user should be navigated to quick Page wizard page,pass,,Pass
+11,The Select Datasource dropdown should be auto populated with the datsource name which is added ,pass,,Pass
+12,"The Select Table from ""datasource name "" dropdown should be displayed",pass,,Pass
+13,"If the Datasource is a new and there is not tables in the added datasource then ""There is no table added for the selected datasource please select any other data source"" message should be displayed in Red",failed,,Pass
+14,"If the added Datsource connection is not correct then in the "" Select table from datasource name dropdown "" should be displayed with the error message saying ""Failed fetching datasource structure, Please check your datasource configuration""",failed,,Pass
+13,"When user select any of the table name from the select table dropdown the new Dropdown should be displayed ""Select Searchable field from ""table name""",pass,,Pass
+14,When the user select any datasource name  the table dropdown should be in the Loading state,pass,,Pass
+15,When the user select any datasource name if there is no table associated with it then the error message should be displayed,failed,,Pass
+16,When there is not table associated with the datsource the edit Datasource Button should be displayed ,pass,,Pass
+17,when user click on edit datasource button the user should be navigated to datasource where the edit and new query button is available,pass,,Pass
+18,"When the user selet the table successfully talong with ""Select a searchable field from fish"" dropdown the generate page button should be displayed",pass,,Pass
+19,The User should be allowed to click on generate Page button without selecting any column from Column dropdown,pass,,Pass
+20,when the user click on generate page the loader symbol should be displayed ,pass,,Pass
+21,Once the user click on Generate page button the user should be naviagted to canvas where the auto generated page is displayed,pass,,Pass
+22,The advantage of selecting the column from column filter is for serach the element in the table based on the column selected the search functionlaity work in the table,pass,,Pass
+23,"when there is datasources name displayed in the database dropdown from which the user cant generate the table when the user try to select it from dropdown the tooltip is displayed saying ""Not generated for template generation"" and the datasource is not selectable",pass,,Pass
+24,"From the datasource page when the user try to add the datasource that is not suppourted for table creation the pop up will be displayed ""Heads up ! Couldn't auto generate a page from this datasource.
+
+You can continue building your app with it using our Drag & Drop Builder  along with back and continue building button",pass,,Pass
+25,If the user click on Bak button the Flow should not break and the user is allowed any datasource which support the table generation and the flow should continue,pass,,Pass
+26,If the user click on Continue building button the flow will be broken the user should add the datasource detailes and once th user click on save the user will be navigated to active tab ,pass,,Pass
+27,"if the user Directly go to the datsources page then the active tab should be displayed with following detailes
+1.Generate New page button
+2.New Query
+3.Meat ball icon(3 dot)",,,Pass
+28,The generate button should be enabled only for the datasource which can generate the table for rest of the datasource the generate new page button will be displayed but it will be diabled,,,Pass
+29,When the user click on generate new page button the user should be navigate to Quick Wizard,,,Pass
+30,The Select Datasource dropdown should be auto populated with the datsource name which is added ,,,Pass
+31,"The Select Table from ""datasource name "" dropdown should be displayed",,,Pass
+32,"If the Datasource is a new and there is not tables in the added datasource then ""There is no table added for the selected datasource please select any other data source"" message should be displayed in Red",,,Pass
+33,"If the added Datsource connection is not correct then in the "" Select table from datasource name dropdown "" should be displayed with the error message saying ""Failed fetching datasource structure, Please check your datasource configuration""",,,Pass
+34,"When user select any of the table name from the select table dropdown the new Dropdown should be displayed ""Select Searchable field from ""table name""",,,Pass
+35,When the user select any datasource name  the table dropdown should be in the Loading state,,,Pass
+36,When the user select any datasource name if there is no table associated with it then the error message should be displayed,,,Pass
+37,When there is not table associated with the datsource the edit Datasource Button should be displayed ,,,Pass
+38,when user click on edit datasource button the user should be navigated to datasource where the edit and new query button is available,,,Pass
+39,"When the user selet the table successfully talong with ""Select a searchable field from fish"" dropdown the generate page button should be displayed",,,Pass
+40,The User should be allowed to click on generate Page button without selecting any column from Column dropdown,,,Pass
+41,when the user click on generate page the loader symbol should be displayed ,,,Pass
+42,Once the user click on Generate page button the user should be naviagted to canvas where the auto generated page is displayed,,,Pass
+43,Whne the user click on new query button the query pane should open and the user should be able to create a query,,,Pass
+44,"When the user click on meat ball icon the pop up should open and the 2 option should be displayed
+1.Delete
+2.Edit",,,Pass
+45,when the user click on delete button the datasource should be deleted from active tab,,,Pass
+46,when the user click on Edit button the datasource edit page should be opened ,,,Pass
+1,This is the flow when the user doent click on Create new datasource instead select the datasource which is already in the dropdown,,,
+2,"When user select the datasource from the selectdatasource dropdown The Select Table from ""datasource name "" dropdown should be displayed",,,Pass
+3,"If the Datasource is a new and there is not tables in the added datasource then ""There is no table added for the selected datasource please select any other data source"" message should be displayed in Red",,,Pass
+4,"If the added Datsource connection is not correct then in the "" Select table from datasource name dropdown "" should be displayed with the error message saying ""Failed fetching datasource structure, Please check your datasource configuration""",,,Pass
+5,"When user select any of the table name from the select table dropdown the new Dropdown should be displayed ""Select Searchable field from ""table name""",,,Pass
+6,When the user select any datasource name  the table dropdown should be in the Loading state,,,Pass
+7,When the user select any datasource name if there is no table associated with it then the error message should be displayed,,,Pass
+8,When there is not table associated with the datsource the edit Datasource Button should be displayed ,,,Pass
+9,when user click on edit datasource button the user should be navigated to datasource where the edit and new query button is available,,,Pass
+10,"When the user selet the table successfully talong with ""Select a searchable field from fish"" dropdown the generate page button should be displayed",,,Pass
+11,The User should be allowed to click on generate Page button without selecting any column from Column dropdown,,,Pass
+12,when the user click on generate page the loader symbol should be displayed ,,,Pass
+13,Once the user click on Generate page button the user should be naviagted to canvas where the auto generated page is displayed,,,Pass
+14,The advantage of selecting the column from column filter is for serach the element in the table based on the column selected the serch functionlaity work in the table,,,Pass
+1,If the datsources added is not a valid then error message should be displayed as“We were unable to fetch the structure of this datasource. Please check the configuration and ensure that the necessary permissions are available”. Edit CTA,,,Pass
+2,If the datasource is invalid show the user an error saying. “We cannot generate a page for this datasource yet. Please select another datasource or build the UI using our drag & drop editor”. Skip To Editor CTA,,,Pass
+3,"When the user select any existing data sources from select data sources dropdown then a new dropdown select table from ""databasename"" should be displayed",,,Pass
+4,once the user connect to new datasource that data source name should be added in the Select datasource dropdown,,,Pass
+,,,,
+,,,,
+,,,,
+,Generate APP->S3 datasource,aug23(release test),issues,
+1,Click on Generate from data table action and the user should be successfully navigated to Quick page wizard,pass,,
+2,The select datsource Dropdown should be displayed,pass,,
+3,Select the S3 datasource,pass,,
+4,"""Select bucket from s3_detailes"" dropdown should be displayed",pass,,
+5," Inside ""Select bucket from s3_detailes"" dropdown all the bucket name should be displayed",pass,,
+6,Once thye user select the bucket name the generate table button should be displayed,pass,,
+7,The default CRUD page should be displayed on the canvas,pass,,
+8,The add file button is displayed the user should be able to add the file,pass,,
+9,Once the user click on add file button the Update file pop up should be displayed,pass,,
+10,"The update pop up should be displayed with following detailes:
+1.select file widget
+2.List widget 
+3.Input Widget
+4.Cancel button
+5.Update button",pass,,
+11,The user should be able to select the file from the local folder by clicking on the select file widget,pass,,
+12,"The selected file The file picker name should be displayed as ""1 file selected"" the count should depend on the number of files selected",pass,,
+13,"The list widget should be displayed follwoing detailes:
+1.The image if it is an image file else file type
+2.The name of the selected file",pass,,
+,,,,
+15,The max limit for adding the file is 5 and the size of the file should be less than 10mb the user can adjust it according to there needs,pass,,
+16,Inside the Update pop up when the user click on cancel button the pop up should be closed,pass,,
+17,Inside the update pop up when the user click on Update pop up the data add should get updated in the list on the canvas,pass,,
+18,"The Default CRUD page should be displayed with following detailes:
+1.The Search file Prefix placeholder
+2.The image placeholer
+3.The file name placeholder
+4.Update button
+5.Download button
+6.Copy URL button
+7.Delete Button",pass,,
+19,"inside ""Search File Prefix"" placeholder the user should be able to search for the file by using the file name prefix ",failed,,
+20,Inside the Image place holder the image should be displayed if there is no image for the uploaded file then the default image should be displayed,pass,,
+21,inside the file name place holderthe folder /subfolder/filename should be displayed and it should not be editable,pass,,
+22,The update file pop up should be displayed when user click on update button,pass,,
+23,"The update file should be displayed following:
+1. file name input box which should be non editable
+2.Select file button
+3.cancel button
+4.Update button",pass,,
+24,The user should be able to click on Select file button and select the file from the local drive,pass,,
+25,The user will be able to update only the image by using the update button,pass,,
+26,When the user click on Cancel or close icon the pop up should close without any update,pass,,
+27,When the user click on download  button the file should be downloaded and the user should be able to reopen it,pass,,
+28,when the user click on copy url and paste it in any brower the file should be downloaded and user should be able to reopen the file,pass,,
+29,When the user click on the delete button the file should be deleted,pass,,
+,"Following are the file type update should be supported1.
+Any File
+Images
+Videos
+Audio
+Text
+MS Word
+JPEG
+PNG","Tested file type. Img, Png, Mov, Json",,
+,In the add file try to add different type of file at a same time and check the functionality,pass,,
+,Try to add the image for the file which doesnt have a image,pass,,
+,"Try searching files using path, user mjust be able to fetch files",pass,,
+,,,,
+,Generate APP->Google sheets,,,
+1,Click on Generate from data table action and the user should be successfully navigated to Quick page wizard,1.when the user enter the negative number the error is overlapped with the column data which displayed earlier,,
+2,The select datsource Dropdown should be displayed,2.when the user delete from UI delete button on the ui that particular line item doesnt get deleted till manual refresh is done,,
+3,Select the google sheet,3.the update form is greyed out when there are some empty rows with few values ,,
+4,The Select spreadsheet from goggle_sheet dropdown should be displayed all the sheet which is authenticated with the ID should be displayed here,,,
+5,"Once the user select the spreadsheet ""Select sheet from sheetname"" dropdown should be displayed",,,
+6,"All the sheet listed in the main sheet should be displayed in the ""Select sheet from sheet name""  dropdown",,,
+7,"once the user select the sheet name ""Table Header Index"" placeholder should be displayed",,,
+8,"there should be a ? icon displayed next to table header placeholder when the user hover on it the tooltip should be displayed with ""The row index of the column header in the sheet name""",,,
+9,Inside the table hedaer index placeholder the user should be able to enter on by click on the arrow enter the row number,,,
+10,"when the user enter the column number which doesnt have data then the ""no column found message should be displayed""",,,
+11,when the user click on the generate app the app should be created,,,
+12,when the user add the new row data in the excel that should be displayed on the UI,,,
+13,If the user add a new row in the ui by click on New row button then the data should be reflected in the goggle sheet,,,
+14,when the user select any one row that should be sleected for th Update form,,,
+15,When the user update the row from the update form the same should be reflected in the UI and in the google sheet,,,
+16,When the user click on the delete button the line item should be deleted both on Ui and in the google sheet,,,
+17,"Check the data and sheet name with following scenario
+1.Empty space
+2.Start with underscore
+3.Start with dot
+4.Strat with any special Charcter",,,
+,1.when the user click on Build on drag and drop action the widget pane should be displayed in the entity section for easy access,,,
+,2.There should be a search button in the active datasource tab so when there are more datasources it would be easier for the user to serach,,,
+,3.When the deafault crud page is generated the default 2 error is displayed in the debugger section,,,
+,4.Inside the Update file pop up The default error is displayed for File picker widget and the input box inside the list widget,,,
+,5.The 1 file selected text is displayed when user try to update the image from update button,,,
+,6.The download button css allignment is bit broken when the resolution is low->done,,,
+,8.when the user search the invalid folder then the invalid serach is not handled in the list widget,,,
+,9.when the user generate a page from active tab the new page is create and the old page from where the action started that page is kept blan->expected behaviour,,,
