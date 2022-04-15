@@ -65,7 +65,7 @@ if __name__ == "__main__":
     #loop through each line in the csv file
     for index, row in df.iterrows():
         test_case = TestCase()
-        test_case.set_test_case_title('ApplicationPage' + ' - ' + str(row['Sl no']))
+        test_case.set_test_case_title('Usecases for Application Page']))
         test_case.add_test_case_steps(row['Usecases for Application Page'])
         #test_case.add_test_case_expected_result(row['EXPECTED RESULT'])
         #test_case.add_test_case_labels(row['TEST TYPE'])
